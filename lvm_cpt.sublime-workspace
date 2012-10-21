@@ -1,0 +1,1371 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get_tit",
+				"get_the_title"
+			],
+			[
+				"lvm",
+				"lvm_people_citacao"
+			],
+			[
+				"get_po",
+				"get_post_meta"
+			],
+			[
+				"get_meta_",
+				"get_meta_keys"
+			],
+			[
+				"get_me",
+				"get_meta_tags"
+			],
+			[
+				"lvm_",
+				"lvm_people"
+			],
+			[
+				"get_p",
+				"get_posts"
+			],
+			[
+				"me",
+				"message"
+			],
+			[
+				"p",
+				"post	@=post"
+			],
+			[
+				"js",
+				"json_fiels"
+			],
+			[
+				"k",
+				"key1"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"cpt_lv",
+				"cpt_lvm_people_unique_hash"
+			],
+			[
+				"sen",
+				"send_unique"
+			],
+			[
+				"add_",
+				"add_option"
+			],
+			[
+				"g",
+				"groups"
+			],
+			[
+				"u",
+				"unique"
+			],
+			[
+				"new",
+				"new_version"
+			],
+			[
+				"se",
+				"send_groups"
+			],
+			[
+				"j",
+				"json_encode"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"post",
+				"post_id"
+			],
+			[
+				"meta",
+				"metadataUniqueFields"
+			],
+			[
+				"ret",
+				"retData"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"metada",
+				"metadataFields"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"fields",
+				"fields_url"
+			],
+			[
+				"file_",
+				"file_get_contents"
+			],
+			[
+				"fiel",
+				"fields_url"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"str_",
+				"str_replace"
+			],
+			[
+				"field",
+				"fieldLabel"
+			],
+			[
+				"data",
+				"dataName"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"para",
+				"param	@param"
+			],
+			[
+				"pa",
+				"param	@param"
+			],
+			[
+				"in",
+				"input	input - text"
+			],
+			[
+				"inp",
+				"input	input - text"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"metabox",
+				"_metabox_title"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "lvm_people_admin_settings.php",
+			"settings":
+			{
+				"buffer_size": 9873,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/dev/lvm.dev/wp-config.php",
+			"settings":
+			{
+				"buffer_size": 3620,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/dev/lvm_people_form.php",
+			"settings":
+			{
+				"buffer_size": 6613,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "inc/lvm_admin_fields.php",
+			"settings":
+			{
+				"buffer_size": 558,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"git",
+				"GitHub: Open Gist in Editor"
+			],
+			[
+				"fetc",
+				"Fetch: Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"fet",
+				"Fetch: Package"
+			],
+			[
+				"ti",
+				"Convert Case: Title Case"
+			],
+			[
+				"t",
+				"Convert Case: Title Case"
+			],
+			[
+				"tit",
+				"Convert Case: Title Case"
+			],
+			[
+				"lo",
+				"Convert Case: Lower Case"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"cas",
+				"Convert Case: Title Case"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"case",
+				"Convert Case: Lower Case"
+			],
+			[
+				"tas",
+				"Set Syntax: Tasks"
+			],
+			[
+				"to",
+				"Todo: Add"
+			],
+			[
+				"todo",
+				"Todo: Add-at-line"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"GitHub: Open Gist in Editor"
+			],
+			[
+				"syn p",
+				"Set Syntax: PHP"
+			],
+			[
+				"synta ht",
+				"Set Syntax: HTML5"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"gis",
+				"Gist: Update File"
+			],
+			[
+				"synta",
+				"Set Syntax: PHP"
+			],
+			[
+				"lvm",
+				"Snippet: LVM: Text or Url field (unique)"
+			],
+			[
+				"lv",
+				"Snippet: LVM: Text field (unique)"
+			],
+			[
+				"open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"syn",
+				"Set Syntax: PHP"
+			],
+			[
+				"sni bo",
+				"Snippet: boolean-field"
+			],
+			[
+				"wor",
+				"Snippet: Easy way to start WordPress plugin"
+			],
+			[
+				"DO",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"DOC",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"INSTA",
+				"Package Control: Install Package"
+			],
+			[
+				"synt php",
+				"Set Syntax: PHP"
+			],
+			[
+				"syntax",
+				"Set Syntax: CSS"
+			],
+			[
+				"packa",
+				"Package Control: Discover Packages"
+			],
+			[
+				"packages",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"synta htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"SNI WOR",
+				"Snippet: Register CPT + MetaBox Wordpress"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Start Docblock"
+			],
+			[
+				"Snippet: w",
+				"Snippet: Register CPT + MetaBox Wordpress"
+			],
+			[
+				"snip w",
+				"Snippet: Register CPT + MetaBox Wordpress"
+			],
+			[
+				"Gist:",
+				"Gist: Insert Gist"
+			],
+			[
+				"snippets w",
+				"Snippet: Easy way to start WordPress plugin"
+			],
+			[
+				"new",
+				"Preferences: Browse Packages"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"css",
+				"Preferences: CSSLint Settings – Default"
+			],
+			[
+				"sni",
+				"Snippet: Register CPT + MetaBox Wordpress"
+			],
+			[
+				"dele",
+				"Gist: Delete Gist File"
+			],
+			[
+				"gist:",
+				"Gist: Open Gist in Browser"
+			],
+			[
+				"sni ",
+				"Snippet: Register CPT + MetaBox Wordpress"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sni wo",
+				"Snippet: Register CPT + MetaBox Wordpress"
+			],
+			[
+				"sni wor",
+				"Snippet: Register CPT + MetaBox Wordpress"
+			],
+			[
+				"ali",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"algn",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"snip wo",
+				"Snippet: Register Custom Post Type Wordpress"
+			],
+			[
+				"word meta",
+				"Snippet: Create custom meta boxes using the Tammy's Hart system, available at https://github.com/tammyhart/Reusable-Custom-WordPress-Meta-Boxes"
+			],
+			[
+				"snip word",
+				"Snippet: Register Custom Post Type Wordpress"
+			],
+			[
+				"worpre",
+				"Snippet: Easy way to start WordPress plugin"
+			],
+			[
+				"syntax p",
+				"Set Syntax: PHP"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"file",
+				"Snippet: FILES['…']"
+			],
+			[
+				"fe",
+				"Fetch: Package"
+			],
+			[
+				"f",
+				"Fetch: Package"
+			],
+			[
+				"p",
+				"Preferences: Settings - User"
+			],
+			[
+				"prefe",
+				"Preferences: Settings - User"
+			],
+			[
+				"pre",
+				"Preferences: Settings - Default"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/LiveReload.sublime-settings",
+		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e9.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e4.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e8.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e3.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e6.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e7.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e1.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e5.srt",
+		"/C/Users/Thiago/Desktop/Borgias S2/leg/e04.srt",
+		"/C/Users/Thiago/Desktop/Borgias S2/leg/e06.srt",
+		"/C/Users/Thiago/Desktop/Borgias S2/leg/e08.srt",
+		"/C/Users/Thiago/Desktop/Borgias S2/leg/e05.srt",
+		"/C/Users/Thiago/Desktop/Borgias S2/leg/e07.srt",
+		"/C/Users/Thiago/Desktop/Borgias S2/leg/e10.srt",
+		"/C/Users/Thiago/Desktop/Borgias S2/leg/e02.srt",
+		"/C/Users/Thiago/Desktop/Borgias S2/leg/e03.srt",
+		"/C/Users/Thiago/Desktop/Borgias S2/leg/e01.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/e8.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/e9.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/e4.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/e7.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/e6.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/e1.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/e5.srt",
+		"/C/Users/Thiago/Desktop/Borgias S1/e3.srt",
+		"/C/Users/Thiago/Desktop/e6.srt",
+		"/C/Users/Thiago/Downloads/thbgistemp (3)/The Borgias  2ª Temporada720p [www.baixartorrent.net]/The.Borgias.S02E04.720p.HDTV.x264-IMMERSE.srt",
+		"/C/Users/Thiago/Downloads/The Borgias Season 1 Complete 720p/The.Borgias.S01E01.720p.HDTV.x264.srt",
+		"/C/Users/Thiago/Downloads/The.Borgias.S02E06.REPACK.720p.HDTV.x264-IMMERSE [PublicHD]/the.borgias.s02e06.repack.720p.hdtv.x264-immerse.nfo",
+		"/C/Users/Thiago/Downloads/[ www.Speed.Cd ] - The.Borgias.S02E05.720p.HDTV.x264-IMMERSE/the.borgias.s02e05.720p.hdtv.x264-immerse.sfv",
+		"/C/Users/Thiago/Desktop/coursera/PythonInteractive/ass1/begin.py",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/dados gerais/plantas.txt",
+		"/C/xampp/htdocs/dev/people.js",
+		"/C/xampp/htdocs/dev/lvm_people_form.php",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/08_agosto/papelaria/cartoes1/gerentes.txt",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/endereçoPlantas.xml",
+		"/C/Users/Thiago/Downloads/Houaiss eletrônico [3.0] (2009)/FHS-21570589",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/plantas.txt",
+		"/C/Users/Thiago/Downloads/master.atom.webintents",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/plantas.csv",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/developing.TODO",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/PlainTasks/messages/Tutorial.todo",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Todo Manager/README.md",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/TodoManager.sublime-settings",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/TodoManager/TodoManager.sublime-settings",
+		"/C/Users/Thiago/Google Drive/programming/javascript/backbone-fundamentals.epub",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/periodicos/linha de frente/45_out-15/mail mkt/index.html",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/periodicos/linha de frente/45_out-15/pagina/index.html",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/periodicos/linha de frente/sendemail.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-text-field-unique.sublime-snippet",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-cpt-metabox-autoSave.sublime-snippet",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/Gist.sublime-settings",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/lvm_people_admin_settings.php",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/inc/fields/lvm_boolean_field.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-cpt-and-metabox-start.sublime-snippet",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/inc/lvm_admin_fields.php",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/inc/fields/lvm_url_field.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-add-metabox.sublime-snippet",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/inc/fields/lvm_text_field.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-boolean-field-unique.sublime-snippet",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/lvm_publications_admin_settings.php",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/lvm_people_admin_settings.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm-cpt-and-metabox-start.sublime-snippet",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm_boolean-field.sublime-snippet",
+		"/C/xampp/htdocs/dev/trying.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm-cpt-AND-metabox-.sublime-snippet",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm-cpt-metabox-autoSave.sublime-snippet",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt.sublime-project",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/lvm_people_admin_settings",
+		"/C/Users/Thiago/Documents/CS6 Master Collection/Crack/MKDEV TEAM.nfo",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/LVM/lvm-cpt-and-metabox.sublime-snippet",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/fields/lvm_date_field.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/LVM/boolean-field.sublime-snippet",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/LVM/lvm_boolean-field.sublime-snippet",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/fields/lvm_text_field.php",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/fields/lvm_boolean_field.php",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/lvm_admin_fields.php",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/1a turma/names.xml",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/1a turma/names3.xml",
+		"/C/xampp/htdocs/dev/hash.php",
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/2a turma/names.xml",
+		"/c/xampp/htdocs/dev/hash.php",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/lvm_people_admin_fields.php",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/fields/lvm_radio_field",
+		"/C/Users/Thiago/Documents/Downloads/Kill Bill Vol 1 KLAXXON/Kill Bill vol 1 KLAXXON.srt",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/forms/text-field.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/DocBlockr/Base File.sublime-settings",
+		"/C/xampp/htdocs/dev/lvm.dev/data-requested.txt",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/AdvancedNewFile/README.rst",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/Custom Posts/cpt-and-metabox.sublime-snippet",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Goto Folder/GotoFolder.sublime-settings",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/README.md",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/CSSLint/CSSLint.sublime-settings",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Gist/Gist.sublime-settings",
+		"/C/xampp/htdocs/dev/h5bp/index.html",
+		"/C/xampp/htdocs/dev/GitHub/primeiro/README",
+		"/C/xampp/htdocs/dev/GitHub/comecando-online/Hello/README",
+		"/C/xampp/htdocs/dev/testeGit/README",
+		"/C/xampp/htdocs/dev/GitHub/Hello-World/aloha/README",
+		"/C/xampp/htdocs/dev/GitHub/primeiro/tryout/README.md",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm-people-custom-post/lvm-people-custom-post-v1.php",
+		"/C/xampp/htdocs/dev/ch4-book-reviews-v2.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm/people-custom-post.php",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-config.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/C/Users/Thiago/Links/dev.lnk",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/Users/Thiago/Dev/lvm.dev/index.html",
+		"/C/Users/Thiago/Dev/lvm.dev/index,html",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Thiago/Desktop/teste.php",
+		"/C/Users/Thiago/Desktop/niver_ed91.xml",
+		"/C/Users/Thiago/Desktop/teste.xlst",
+		"/G/Lynda.com/Lynda CS5 Total Training/LC_InDesignCS5_DynamicPublishingWorkflowsXML/Exercise Files/Ex_Files_IDCS5_DPW_XML/Exercise Files/Ch09/09_01/Catalog-4-images.xsl",
+		"/C/Users/Thiago/Desktop/ANIVERSARIANTES.xml",
+		"/G/Lynda.com/Lynda CS5 Total Training/LC_InDesignCS5_DynamicPublishingWorkflowsXML/Exercise Files/Ex_Files_IDCS5_DPW_XML/Exercise Files/Ch09/09_01/catalog-short.xml",
+		"/G/Lynda.com/Lynda CS5 Total Training/LC_InDesignCS5_DynamicPublishingWorkflowsXML/Exercise Files/Ex_Files_IDCS5_DPW_XML/Exercise Files/Ch09/09_01/dictionary-4-images.xsl"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"syn",
+			"syn\nsyn",
+			"syn\n",
+			".\n",
+			"sy",
+			"The Borg",
+			"sync",
+			"elderman",
+			"honeybunny",
+			"The Borgias",
+			"\\u{2,}",
+			"\\U{2,}",
+			"The Borgias",
+			"\\u{2,}",
+			"\\u{2.}",
+			"The Borgias",
+			"\\u{2,}",
+			"Borgias",
+			"\\u{2,}",
+			"The Borg",
+			"\\u{2,}",
+			"The Borgias",
+			"legendas",
+			"THE BORGIAS",
+			"lege",
+			" the Borgia",
+			" The Borgia",
+			" ",
+			"",
+			"§",
+			"ˆ",
+			"‡",
+			"Itu",
+			"cursando",
+			"Micheletti",
+			"44",
+			"<end>",
+			"end-pt",
+			"<end>",
+			"<planta>",
+			"<end>",
+			"Planta ",
+			"text",
+			"7",
+			"6",
+			"require",
+			"{6",
+			"5",
+			"=>",
+			"$_",
+			"$",
+			"//",
+			"\\",
+			"cpt_lvm_people_version",
+			" $",
+			"$",
+			"lvm_people",
+			"_version",
+			"cpt_lvm_people",
+			"fields",
+			"_cpt_lvm",
+			"option( 'cpt_lvm",
+			"_option( 'cpt_lvm_people",
+			"e/ ou",
+			"e/ou",
+			"decode_json",
+			"get_option",
+			"fields",
+			"send_",
+			"unique",
+			"add_option",
+			"unique",
+			"$hash_unique",
+			"\n",
+			"1",
+			"dev",
+			"'is_membro_lab'",
+			"is_membro_lab",
+			"retData",
+			"\\$",
+			"value",
+			"require_once",
+			"text",
+			"fields",
+			"widget",
+			"legacy.php",
+			"index",
+			"string",
+			"failed",
+			"isset",
+			"placeholder",
+			"value",
+			"$args",
+			"name",
+			"echo ",
+			"? $args",
+			"echo",
+			"$args[name]",
+			"$args",
+			"$",
+			"function-to-save-the-inputted-data",
+			"ch4_br_display_review_details_meta_box",
+			"cpt_admin_interface_init",
+			"ch4_br_review_details_meta_box",
+			"ch4_br_admin_init",
+			"2: NomeCptPlural",
+			"Book Review (sing)",
+			"${1:test}",
+			"Book Reviews (plural)",
+			"NomeDoCpt",
+			"book_review_author_name",
+			"function to save the form data",
+			"save_post",
+			"ch4_br_add_book_review_fields",
+			"book_author",
+			"$book_review",
+			"book_reviews",
+			"book_review",
+			"ch4_br_create_book_post_type",
+			"book_revies",
+			"book_reviews",
+			"ch4_br_create_book_post_type",
+			"book_reviews",
+			"ch4_br_create_book_post_type",
+			"ch4_br_review_details_meta_box",
+			"1:function",
+			"ch4_br_admin_init",
+			"ssword_here"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"</data><nome>",
+			"</nome><data>",
+			"</nome>\n<data>()</data><nome>",
+			"</nome>\n<data></data><nome>",
+			"</nome>\n<data>(.*)</data><nome>",
+			"</nome>\n<data>[0-9]{1,2}/[0-9]{1,2}\n</data><nome>",
+			"</nome>\n<data>[0-9]{1,2}/[0-9]{1,2}</data><nome>",
+			"</nome>/n<data>",
+			"e"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "lvm_people_admin_settings.php",
+					"settings":
+					{
+						"buffer_size": 9873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6017,
+								6017
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3324.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/dev/lvm.dev/wp-config.php",
+					"settings":
+					{
+						"buffer_size": 3620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3620,
+								3620
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 707.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/xampp/htdocs/dev/lvm_people_form.php",
+					"settings":
+					{
+						"buffer_size": 6613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								336,
+								6444
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "inc/lvm_admin_fields.php",
+					"settings":
+					{
+						"buffer_size": 558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"lvm_p",
+				"wp-content/plugins/lvm_people_cpt/lvm_people_admin_settings.php"
+			],
+			[
+				"pre",
+				"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+			],
+			[
+				"",
+				"/C/Users/Thiago/Desktop/teste.php"
+			],
+			[
+				"p",
+				"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 203.0,
+	"status_bar_visible": true
+}

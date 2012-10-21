@@ -1,0 +1,23 @@
+#cpt_lvm_people_dados_pessoais .inside{
+	margin: 0 !important;
+	padding: 0;
+}
+
+#cpt_lvm_people_dados_pessoais small{
+	color: #777;
+}
+
+.lvm_separador{
+	border-bottom: 1px solid #DFDFDF;
+	border-top: 1px solid white;
+	padding: 6px 10px 8px;
+}
+
+.lvm_separador_last{
+	border-top: 1px solid white;
+	padding: 6px 10px 8px;
+}
+
+.lvm_separador .all-long{
+	width: 98%;
+}
