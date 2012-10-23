@@ -172,26 +172,23 @@ function cpt_lvm_people_dados_pessoais_html_def( $post_type ) {
 
         <p>
             <label for="lvm_people_nome">Nome:</label><br>
-            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_nome" value="" >
+            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_nome" value="" placeholder="Preencha com a primeira parte do nome.">
             <br>
-            Preencha com a primeira parte do nome.<br>
-            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', preencha o campo com 'João Carlos'</small>
+            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', preencha o campo com 'João Carlos'.</small>
         </p>
 
         <p>
             <label for="lvm_people_sobrenome">Sobrenome:</label><br>
-            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_sobrenome" value="" >
+            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_sobrenome" value=""  placeholder="Preencha com a segunda parte do nome.">
             <br>
-            Preencha com a segunda parte do nome.<br>
-            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', preencha o campo com da 'Siva Souza'</small>
+            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', preencha o campo com da 'Siva Souza'.</small>
         </p>
 
         <p>
-            <label for="lvm_people_sobrenome">Sobrenome:</label><br>
-            <input type="text" id="nome" class="all-long" name="lvm_people_sobrenome" value="" >
+            <label for="lvm_people_citacao">Citação:</label><br>
+            <input type="text" id="nome" class="all-long" name="lvm_people_citacao" value="" placeholder="Preencha como deve constar nas bibliografias e citações." >
             <br>
-            Preencha como deve constar nas bibliografias e citações.<br>
-            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', uma forma poderia ser 'Souza, J. C. S.'</small>
+            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', uma forma poderia ser 'Souza, J. C. S.'.</small>
         </p>
 
     </div>
