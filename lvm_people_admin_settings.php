@@ -133,13 +133,25 @@ function cpt_lvm_people_admin_interface_init() {
             'high',                                                   //priority within the context where the boxes should show ('high', 'core', 'default' or 'low') );
             ''                                                        //(optional) Arguments to pass into your callback function. The callback will receive the object and whatever parameters are passed through this variable
         );
+
+      
+        add_meta_box( 
+            'cpt_lvm_people_contatos',               //html id that will be applied to this metabox
+            'Contatos',                                      //appears at the top of the new metabox when displayed
+            'cpt_lvm_people_contatos_html_def',      //callback >  the function which will load the html into the metabox
+            'lvm_people',                                      //name of our custom post type
+            'normal',                                                       //where the box will appear. can be "normal", "advanced" or "side"
+            'high',                                                         //priority within the context where the boxes should show ('high', 'core', 'default' or 'low') );
+            ''                                                              //(optional) Arguments to pass into your callback function. The callback will receive the  object and whatever parameters are passed through this variable
+        );
+
     }
+        
 }
 
 // Function to display Dados Pessoais meta box contents
 function cpt_lvm_people_dados_pessoais_html_def( $post_type ) {
 
-    require_once( "inc/lvm_admin_fields.php" );
     global $post;
     $post_id = $post->ID;
 
@@ -148,107 +160,8 @@ function cpt_lvm_people_dados_pessoais_html_def( $post_type ) {
      * HERE IS THE SPACE TO INCLUDE THE HTML OF METABOXES
      * //////////////////////////////////////////////////
      */
-    
-    // Use the fields snippets to add the metaboxes
-    // Sublime text 2 lvm snippets
 
-    ?>
-
-    <div class="lvm_separador">
-
-        <p>
-            <?php $value = get_post_meta($post_id, '_lvm_people_lattes', true);  ?>
-            <label id="label-lattes" class="required" for="lvm_people_lattes">Endereço web do Currículo Lattes</label>
-            <input type="url" id="lattes" name="lvm_people_lattes" class="required" value="<?php echo $value; ?>" placeholder="http://" required="required">
-        </p>
-
-    </div>
-
-
-    <div class="lvm_separador">
-
-        <p>
-            <?php $value = get_post_meta($post_id, '_lvm_people_nome', true);  ?>
-            <label for="lvm_people_nome">Nome:</label><br>
-            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_nome" value="<?php echo $value; ?>" placeholder="Preencha com a primeira parte do nome.">
-            <br>
-            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', preencha o campo com 'João Carlos'.</small>
-        </p>
-
-        <p>
-            <?php $value = get_post_meta($post_id, '_lvm_people_sobrenome', true);  ?>
-            <label for="lvm_people_sobrenome">Sobrenome:</label><br>
-            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_sobrenome" value="<?php echo $value; ?>"  placeholder="Preencha com a segunda parte do nome.">
-            <br>
-            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', preencha o campo com da 'Siva Souza'.</small>
-        </p>
-
-        <p>
-            <?php $value = get_post_meta($post_id, '_lvm_people_citacao', true);  ?>
-            <label for="lvm_people_citacao">Citação:</label><br>
-            <input type="text" id="nome" class="all-long" name="lvm_people_citacao" value="<?php echo $value; ?>" placeholder="Preencha como deve constar nas bibliografias e citações." >
-            <br>
-            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', uma forma poderia ser 'Souza, J. C. S.'.</small>
-        </p>
-
-    </div>
-
-    <div class="lvm_separador_last">
-
-        <p>
-            <?php $value = get_post_meta($post_id, '_lvm_people_sexo', true);  ?>
-            <label for="lvm_people_sexo">Sexo</label>
-            <input type="radio" name="lvm_people_sexo" <?php checked( $value, "masculino")?>value="masculino" required="required">Masculino
-            <input type="radio" name="lvm_people_sexo" <?php checked( $value, "feminino")?>value="feminino" required="required">Feminino
-        </p>
-
-        <p>
-            <?php 
-                $value = get_post_meta($post_id, '_lvm_people_nasc', true);
-                $value = explode("/", $value);
-                $dia = isset ( $value[0] ) ? $value[0] : ""; 
-                $mes = isset ( $value[1] ) ? $value[1] : ""; 
-                $ano = isset ( $value[2] ) ? $value[2] : ""; 
-            ?>
-
-            <label for="lvm_people_nasc">Data de Nascimento</label>
-            <select name="lvm_people_dia" id="nasc_dia">
-            <?php 
-                $i=1; $ii=31;
-                while ( $i<=$ii ){
-                    $i = str_pad( $i, 2, 0, STR_PAD_LEFT);
-                    echo "<option ". selected($dia, $i) . "value='$i'>$i</option>";
-                    $i++;
-                }
-            ?>
-            </select>
-            /
-            <select name="lvm_people_mes" id="nasc_mes">
-            <?php
-                $meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro' ];
-                $i=0; $ii=11;
-                while( $i<=$ii ){
-                    echo "<option " . selected($mes, $i) . "value='". str_pad( $i+1, 2, 0, STR_PAD_LEFT) . "'>$meses[$i]</option>";
-                    $i++;
-                }
-            ?>
-            </select>   
-            /
-            <select name="lvm_people_ano" id="nasc_ano">
-            <?php
-                $ii = date('Y'); $i = $ii - 100;
-                while( $i<= $ii ) {
-                    echo "<option " . selected($ano, $i) . "value='". str_pad( $i, 2, 0, STR_PAD_LEFT) . "'>$i</option>";
-                    $i++;
-                }
-            ?>
-            </select>
-        </p>
-
-    </div>
-
-    <?php
-    
+    require ("inc/metaboxes/dados-pessoais.php");
     
     /**
      * ///////////////////////////////////////////
@@ -256,6 +169,8 @@ function cpt_lvm_people_dados_pessoais_html_def( $post_type ) {
      * ///////////////////////////////////////////
      */
 }
+
+
 
 // Register function to be called when posts are saved
 // The function will receive 2 arguments
