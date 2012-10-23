@@ -120,7 +120,7 @@ add_action( 'admin_init', 'cpt_lvm_people_admin_interface_init' );
 // Function to register new Dados Pessoais meta box for book review post editor
 function cpt_lvm_people_admin_interface_init() {
 
-    $post_type = $_GET["post_type"];
+    $post_type = isset($_GET["post_type"]) ? $_GET["post_type"] : "";
 
     $check = "post-new.php";
     $cur_page = $_SERVER['REQUEST_URI'];
