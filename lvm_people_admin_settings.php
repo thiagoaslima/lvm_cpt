@@ -120,13 +120,7 @@ add_action( 'admin_init', 'cpt_lvm_people_admin_interface_init' );
 // Function to register new Dados Pessoais meta box for book review post editor
 function cpt_lvm_people_admin_interface_init() {
 
-    $post_type = isset($_GET["post_type"]) ? $_GET["post_type"] : "";
-
-    $check = "post-new.php";
-    $cur_page = $_SERVER['REQUEST_URI'];
-    $pos = strpos($cur_page, $check);
-
-    if ( is_admin() and $pos !== false and $post_type == "lvm_people" ){
+    if ( is_admin() ){
 
         wp_enqueue_style( 'lvm_cpt', plugins_url( 'css/lvm_cpt_styles.css', __FILE__ ) );
 
@@ -137,7 +131,7 @@ function cpt_lvm_people_admin_interface_init() {
             'lvm_people',                                //name of our custom post type
             'normal',                                                 //where the box will appear. can be "normal", "advanced" or "side"
             'high',                                                   //priority within the context where the boxes should show ('high', 'core', 'default' or 'low') );
-            ''                                                        //(optional) Arguments to pass into your callback function. The callback will receive the  object and whatever parameters are passed through this variable
+            ''                                                        //(optional) Arguments to pass into your callback function. The callback will receive the object and whatever parameters are passed through this variable
         );
     }
 }
@@ -146,6 +140,8 @@ function cpt_lvm_people_admin_interface_init() {
 function cpt_lvm_people_dados_pessoais_html_def( $post_type ) {
 
     require_once( "inc/lvm_admin_fields.php" );
+    global $post;
+    $post_id = $post->ID;
 
     /**
      * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -161,8 +157,9 @@ function cpt_lvm_people_dados_pessoais_html_def( $post_type ) {
     <div class="lvm_separador">
 
         <p>
+            <?php $value = get_post_meta($post_id, '_lvm_people_lattes', true);  ?>
             <label id="label-lattes" class="required" for="lvm_people_lattes">Endereço web do Currículo Lattes</label>
-            <input type="url" id="lattes" name="lvm_people_lattes" class="required" value="" placeholder="http://" required="required">
+            <input type="url" id="lattes" name="lvm_people_lattes" class="required" value="<?php echo $value; ?>" placeholder="http://" required="required">
         </p>
 
     </div>
@@ -171,22 +168,25 @@ function cpt_lvm_people_dados_pessoais_html_def( $post_type ) {
     <div class="lvm_separador">
 
         <p>
+            <?php $value = get_post_meta($post_id, '_lvm_people_nome', true);  ?>
             <label for="lvm_people_nome">Nome:</label><br>
-            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_nome" value="" placeholder="Preencha com a primeira parte do nome.">
+            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_nome" value="<?php echo $value; ?>" placeholder="Preencha com a primeira parte do nome.">
             <br>
             <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', preencha o campo com 'João Carlos'.</small>
         </p>
 
         <p>
+            <?php $value = get_post_meta($post_id, '_lvm_people_sobrenome', true);  ?>
             <label for="lvm_people_sobrenome">Sobrenome:</label><br>
-            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_sobrenome" value=""  placeholder="Preencha com a segunda parte do nome.">
+            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_sobrenome" value="<?php echo $value; ?>"  placeholder="Preencha com a segunda parte do nome.">
             <br>
             <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', preencha o campo com da 'Siva Souza'.</small>
         </p>
 
         <p>
+            <?php $value = get_post_meta($post_id, '_lvm_people_citacao', true);  ?>
             <label for="lvm_people_citacao">Citação:</label><br>
-            <input type="text" id="nome" class="all-long" name="lvm_people_citacao" value="" placeholder="Preencha como deve constar nas bibliografias e citações." >
+            <input type="text" id="nome" class="all-long" name="lvm_people_citacao" value="<?php echo $value; ?>" placeholder="Preencha como deve constar nas bibliografias e citações." >
             <br>
             <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', uma forma poderia ser 'Souza, J. C. S.'.</small>
         </p>
@@ -196,30 +196,39 @@ function cpt_lvm_people_dados_pessoais_html_def( $post_type ) {
     <div class="lvm_separador_last">
 
         <p>
-            <label for="lvm_people-sexo">Sexo</label>
-            <input type="radio" name="lvm_people_sexo" value="masculino" required="required">Masculino
-            <input type="radio" name="lvm_people_sexo" value="feminino" required="required">Feminino
+            <?php $value = get_post_meta($post_id, '_lvm_people_sexo', true);  ?>
+            <label for="lvm_people_sexo">Sexo</label>
+            <input type="radio" name="lvm_people_sexo" <?php checked( $value, "masculino")?>value="masculino" required="required">Masculino
+            <input type="radio" name="lvm_people_sexo" <?php checked( $value, "feminino")?>value="feminino" required="required">Feminino
         </p>
 
         <p>
+            <?php 
+                $value = get_post_meta($post_id, '_lvm_people_nasc', true);
+                $value = explode("/", $value);
+                $dia = isset ( $value[0] ) ? $value[0] : ""; 
+                $mes = isset ( $value[1] ) ? $value[1] : ""; 
+                $ano = isset ( $value[2] ) ? $value[2] : ""; 
+            ?>
+
             <label for="lvm_people_nasc">Data de Nascimento</label>
-            <select name="lvm_people_nasc_dia" id="nasc_dia">
+            <select name="lvm_people_dia" id="nasc_dia">
             <?php 
                 $i=1; $ii=31;
                 while ( $i<=$ii ){
                     $i = str_pad( $i, 2, 0, STR_PAD_LEFT);
-                    echo "<option value='$i'>$i</option>";
+                    echo "<option ". selected($dia, $i) . "value='$i'>$i</option>";
                     $i++;
                 }
             ?>
             </select>
             /
-            <select name="lvm_people_nasc_mes" id="nasc_mes">
+            <select name="lvm_people_mes" id="nasc_mes">
             <?php
                 $meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro' ];
                 $i=0; $ii=11;
                 while( $i<=$ii ){
-                    echo "<option value='". str_pad( $i+1, 2, 0, STR_PAD_LEFT) . "'>$meses[$i]</option>";
+                    echo "<option " . selected($mes, $i) . "value='". str_pad( $i+1, 2, 0, STR_PAD_LEFT) . "'>$meses[$i]</option>";
                     $i++;
                 }
             ?>
@@ -229,11 +238,7 @@ function cpt_lvm_people_dados_pessoais_html_def( $post_type ) {
             <?php
                 $ii = date('Y'); $i = $ii - 100;
                 while( $i<= $ii ) {
-                    if( $i!=$ii-20 ){
-                        echo "<option value='". str_pad( $i, 2, 0, STR_PAD_LEFT) . "'>$i</option>";
-                    } else {
-                        echo "<option value='". str_pad( $i, 2, 0, STR_PAD_LEFT) . "' selected='selected'>$i</option>";
-                    }
+                    echo "<option " . selected($ano, $i) . "value='". str_pad( $i, 2, 0, STR_PAD_LEFT) . "'>$i</option>";
                     $i++;
                 }
             ?>
@@ -271,40 +276,44 @@ function cpt_lvm_people_save_data( $post_id = false, $post = false ) {
      * PASTE HERE THE SAVE_DATA_CODE GENERATED WITH THE METABOX INSTANCE
      * /////////////////////////////////////////////////////////////////
      */
-
-        // Store data in post meta table if present in post data
-        if ( isset( $_POST['lvm_people_lattes'] ) && $_POST['lvm_people_lattes'] != '' ) {
-            update_post_meta( $post_id, 'lvm_people_lattes', $_POST['lvm_people_lattes'] );
-        } elseif ( get_post_meta( $post_id, 'lvm_people_lattes', true) ) {
-            update_post_meta( $post_id, 'lvm_people_lattes', '' );
-        }
-
-        // Store data in post meta table if present in post data
-        if ( isset( $_POST['is_member'] ) && $_POST['is_member'] != '' ) {
-
-            update_post_meta( $post_id, 'is_member', $_POST['is_member'] );
-        
-        } elseif ( isset( $_POST['is_member']) ) {
-        
-            $old_value = get_post_meta( $post_id, 'is_member', true );
-            delete_post_meta( $post_id, 'is_member', $old_value);
-        
-        }
-
-  
-        // Store data in post meta table if present in post data
-        if ( isset( $_POST['nome'] ) && $_POST['nome'] != '' ) {
     
-            update_post_meta( $post_id, 'nome_people', $_POST['nome'] );
-        
-        } elseif ( isset( $_POST['nome']) ) {
-        
-            $old_value = get_post_meta( $post_id, 'nome_people', true );
-            delete_post_meta( $post_id, 'nome_people', $old_value);
-        
-        }
+    if ( isset( $_POST['lvm_people_lattes'] ) ) {
+        update_post_meta( $post_id, '_lvm_people_lattes', $_POST['lvm_people_lattes'] );
+    } elseif ( get_post_meta( $post_id, '_lvm_people_lattes', true) ) {
+        update_post_meta( $post_id, '_lvm_people_lattes', '' );
+    }
+    
 
+    if ( isset( $_POST['lvm_people_nome'] ) ) {
+        update_post_meta( $post_id, '_lvm_people_nome', $_POST['lvm_people_nome'] );
+    } elseif ( get_post_meta( $post_id, '_lvm_people_nome', true) ) {
+        update_post_meta( $post_id, '_lvm_people_nome', '' );
+    }
 
+    if ( isset( $_POST['lvm_people_sobrenome'] ) ) {
+        update_post_meta( $post_id, '_lvm_people_sobrenome', $_POST['lvm_people_sobrenome'] );
+    } elseif ( get_post_meta( $post_id, '_lvm_people_sobrenome', true) ) {
+        update_post_meta( $post_id, '_lvm_people_sobrenome', '' );
+    }
+    
+    if ( isset( $_POST['lvm_people_citacao'] ) ) {
+        update_post_meta( $post_id, '_lvm_people_citacao', $_POST['lvm_people_citacao'] );
+    } elseif ( get_post_meta( $post_id, '_lvm_people_citacao', true) ) {
+        update_post_meta( $post_id, '_lvm_people_citacao', '' );
+    }
+    
+    if ( isset( $_POST['lvm_people_sexo'] ) ) {
+        update_post_meta( $post_id, '_lvm_people_sexo', $_POST['lvm_people_sexo'] );
+    } elseif ( get_post_meta( $post_id, '_lvm_people_sexo', true) ) {
+        update_post_meta( $post_id, '_lvm_people_sexo', '' );
+    }
+    
+    if ( isset( $_POST['lvm_people_dia'] ) && isset( $_POST['lvm_people_mes'] ) && isset( $_POST['lvm_people_ano'] ) ) {
+        update_post_meta( $post_id, '_lvm_people_nasc', $_POST['lvm_people_dia']."/".$_POST['lvm_people_mes']."/".$_POST['lvm_people_ano'] );
+    } elseif ( get_post_meta( $post_id, '_lvm_people_nasc', true) ) {
+        update_post_meta( $post_id, '_lvm_people_nasc', '' );
+    }
+    
     /**
      * /////////////////////////////////////////////////////////////////
      * END OF PASTE AREA
