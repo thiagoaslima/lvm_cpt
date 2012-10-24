@@ -2,8 +2,8 @@
 
         <p>
             <?php $value = get_post_meta($post_id, '_lvm_people_lattes', true);  ?>
-            <label id="label-lattes" class="required" for="lvm_people_lattes">Endereço web do Currículo Lattes:</label>
-            <input type="url" id="lattes" name="lvm_people_lattes" class="required mezzo" value="<?php echo $value; ?>" placeholder="http://" required="required">
+            <label id="label-lattes" class="required label mini" for="lvm_people_lattes">Currículo Lattes</label>
+            <input type="url" id="lattes" name="lvm_people_lattes" class="required xxlarge" value="<?php echo $value; ?>" placeholder="http://" required="required">
         </p>
 
     </div>
@@ -13,26 +13,26 @@
 
         <p>
             <?php $value = get_post_meta($post_id, '_lvm_people_nome', true);  ?>
-            <label for="lvm_people_nome">Nome:</label><br>
-            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_nome" value="<?php echo $value; ?>" placeholder="Preencha com a primeira parte do nome.">
+            <label for="lvm_people_nome" class="required label mini">Nome</label>
+            <input type="text" required="required" class="required xxlarge" id="nome" name="lvm_people_nome" value="<?php echo $value; ?>" placeholder="Preencha com a primeira parte do nome.">
             <br>
-            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', preencha o campo com 'João Carlos'.</small>
+            <small>Ex.: para 'João Carlos da Silva Souza', escreva 'João Carlos'.</small>
         </p>
 
         <p>
             <?php $value = get_post_meta($post_id, '_lvm_people_sobrenome', true);  ?>
-            <label for="lvm_people_sobrenome">Sobrenome:</label><br>
-            <input type="text" required="required" class="required all-long" id="nome" name="lvm_people_sobrenome" value="<?php echo $value; ?>"  placeholder="Preencha com a segunda parte do nome.">
+            <label for="lvm_people_sobrenome" class="required label mini">Sobrenome</label>
+            <input type="text" required="required" class="required xxlarge" id="nome" name="lvm_people_sobrenome" value="<?php echo $value; ?>"  placeholder="Preencha com a segunda parte do nome.">
             <br>
-            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', preencha o campo com da 'Siva Souza'.</small>
+            <small>Ex.: para 'João Carlos da Silva Souza', escreva 'Silva Souza'.</small>
         </p>
 
         <p>
             <?php $value = get_post_meta($post_id, '_lvm_people_citacao', true);  ?>
-            <label for="lvm_people_citacao">Citação:</label><br>
-            <input type="text" id="nome" class="all-long" name="lvm_people_citacao" value="<?php echo $value; ?>" placeholder="Preencha como deve constar nas bibliografias e citações." >
+            <label for="lvm_people_citacao" class="required label mini">Citação</label>
+            <input type="text" id="nome" class="required xxlarge" name="lvm_people_citacao" value="<?php echo $value; ?>" placeholder="Preencha como deve constar nas bibliografias e citações.">
             <br>
-            <small>Ex.: Se o nome completo for 'João Carlos da Silva Souza', uma forma poderia ser 'Souza, J. C. S.'.</small>
+            <small>Ex.: para 'João Carlos da Silva Souza', escreva algo como 'Souza, J. C. S.'.</small>
         </p>
 
     </div>
@@ -41,9 +41,11 @@
 
         <p>
             <?php $value = get_post_meta($post_id, '_lvm_people_sexo', true);  ?>
-            <label for="lvm_people_sexo">Sexo</label>
-            <input type="radio" name="lvm_people_sexo" <?php checked( $value, "masculino")?>value="masculino" required="required">Masculino
-            <input type="radio" name="lvm_people_sexo" <?php checked( $value, "feminino")?>value="feminino" required="required">Feminino
+            <label for="lvm_people_sexo" class="required label mini">Sexo</label>
+            <input type="radio" class="required" name="lvm_people_sexo" <?php checked( $value, "masculino")?>value="masculino" required="required">
+            <span class="radio mini">Masculino</span>
+            <input type="radio" class="required" name="lvm_people_sexo" <?php checked( $value, "feminino")?>value="feminino" required="required">
+            <span class="radio mini">Feminino</span>
         </p>
 
         <p>
@@ -55,7 +57,7 @@
                 $ano = isset ( $value[2] ) ? $value[2] : ""; 
             ?>
 
-            <label for="lvm_people_nasc">Data de Nascimento</label>
+            <label for="lvm_people_nasc" class="label mini">Nascimento</label>
             <select name="lvm_people_dia" id="nasc_dia">
             <?php 
                 $i=1; $ii=31;

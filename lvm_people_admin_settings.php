@@ -186,7 +186,7 @@ function cpt_lvm_people_save_data( $post_id = false, $post = false ) {
         
     /**
      * /////////////////////////////////////////////////////////////////
-     * PASTE HERE THE SAVE_DATA_CODE GENERATED WITH THE METABOX INSTANCE
+     * DADOS PESSOAIS
      * /////////////////////////////////////////////////////////////////
      */
     
@@ -229,10 +229,16 @@ function cpt_lvm_people_save_data( $post_id = false, $post = false ) {
     
     /**
      * /////////////////////////////////////////////////////////////////
-     * END OF PASTE AREA
+     * CONTATOS
      * /////////////////////////////////////////////////////////////////
      */
-        
+    
+    if ( isset( $_POST['nome do campo'] ) ) {
+        update_post_meta( $post_id, '_nome do campo', $_POST['nome do campo'] );
+    } elseif ( get_post_meta( $post_id, '_nome do campo', true) ) {
+        update_post_meta( $post_id, '_nome do campo', '' );
+    }
+    
     }
 }
 
