@@ -28,6 +28,23 @@ License:     GPL2
 // GLOSSÁRIO
 // cpt -> custom post type
 
+// Controls the javascript load
+// http://scribu.net/wordpress/optimal-script-loading.html
+add_action('init', 'register_my_script');
+add_action('admin_footer', 'print_my_script');
+ 
+function register_my_script() {
+    wp_register_script('lvm_people_form', plugins_url('js/lvm_people_form.js', __FILE__), array('jquery'), '1.0', true);
+}
+ 
+function print_my_script() {
+    global $post;
+ 
+    if( $post->post_type != "lvm_people" ) return;
+ 
+    wp_print_scripts('lvm_people_form');
+}
+
 
 // Cria o espaço de registro do plugin na tabela wp_options
 register_activation_hook( __FILE__, 'cpt_lvm_people_default_options' );
@@ -155,7 +172,7 @@ function cpt_lvm_people_dados_pessoais_html_def() {
     global $post;
     $post_id = $post->ID;
 
-    require ("inc/metaboxes/dados-pessoais.php");
+    require ("inc/metaboxes/people/dados-pessoais.php");
     
 }
 
@@ -165,7 +182,7 @@ function cpt_lvm_people_contatos_html_def() {
     global $post;
     $post_id = $post->ID;
 
-    require ("inc/metaboxes/contatos.php");
+    require ("inc/metaboxes/people/contatos.php");
     
 }
 

@@ -5,12 +5,21 @@
             $len = count( $value );
         ?>
 
-        <span contenteditable="true" class="label mini">Email</span>
+        <div class="label mini dropdown">
+            <span contenteditable="true" class="termo">Email</span>
+            <div class="lvm_options hide">
+                <span class="contatos arrow-down"></span>
+                <span>residencial</span>
+                <span>comercial</span>
+                <span>personalizar</span>
+            </div>
+        </div>
         <input type="text" class="xlarge" name="lvm_people_email_1" placeholder="example@ufrj.br">
         <span class="mini">
             <input type="checkbox" name="lvm_people_email_boolean_1" value="true"> Público
         </span>
     </p>
+    <a href=# class="add shift-mini">+ Adicionar outro email</a>
 
 </div>
 
@@ -27,6 +36,7 @@
             <input type="checkbox" class="shift-mini" name="lvm_people_tel_boolean_1" value="true"> Público
         </span>
     </p>
+    <a href=# class="add shift-mini">+ Adicionar outro telefone</a>
 
 </div>
 
@@ -43,5 +53,6 @@
             <input type="checkbox" class="shift-mini" name="lvm_people_end_boolean_1" value="true"> Público
         </span>
     </p>
-    
+    <a href=# class="add shift-mini">+ Adicionar outro endereço</a>
+
 </div>

@@ -1,11 +1,21 @@
-#cpt_lvm_people_dados_pessoais .inside,
-#cpt_lvm_people_contatos .inside {
+input {
+	vertical-align: middle;
+}
+input[type="radio"], input[type="checkbox"]{
+	*margin-top: -4px;
+	*margin-bottom: 0;
+}
+select{
+	*position: relative;
+	*top: 10px;
+}
+
+#cpt_lvm_people_dados_pessoais .inside,#cpt_lvm_people_contatos .inside {
 	margin: 0;
 	padding: 0;
 }
 
-#cpt_lvm_people_dados_pessoais .inside *,
-#cpt_lvm_people_contatos .inside *{
+#cpt_lvm_people_dados_pessoais .inside *,#cpt_lvm_people_contatos .inside * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -38,6 +48,7 @@
 	display: inline-block;
 	color: #5C5C5C;
 	text-shadow: 0 1px 2px white;
+	vertical-align: middle;
 }
 
 .mini {
@@ -103,4 +114,105 @@
 .shift-xxlarge {
 	padding: 0 3px 0 6px;
 	margin-left: 84%;
+}
+
+
+
+.add {
+	font-size: .93em;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	*display: inline; /*ie7*/
+}
+.dropdown .lvm_options{
+	position: absolute;
+	display: inline-block;
+	*display: block; /*ie7*/
+	top: 0;
+	left: 90%;
+	padding: 5px 0;
+	height: 1em;
+	width: 1em;
+	overflow: hidden;
+	cursor: pointer;
+	background-color: transparent;
+}
+.dropdown .lvm_options{
+	-webkit-transition-property: height, background-color, width;
+	-moz-transition-property: height, background-color, width;
+	-o-transition-property: height, background-color, width;
+	-ms-transition-property: height, background-color, width;
+	transition-property: height, background-color, width;
+	-webkit-transition-duration: .5s, .8s, .4s;
+	-moz-transition-duration: .5s, .8s, .4s;
+	-o-transition-duration: .5s, .8s, .4s;
+	-ms-transition-duration: .5s, .8s, .4s;
+	transition-duration: .5s, .8s, .4s;
+	-webkit-transition-timing-function: ease-in, ease-in, ease-in-out;
+	-moz-transition-timing-function: ease-in, ease-in, ease-in-out;
+	-o-transition-timing-function: ease-in, ease-in, ease-in-out;
+	-ms-transition-timing-function: ease-in, ease-in, ease-in-out;
+	transition-timing-function: ease-in, ease-in, ease-in-out;  
+}
+
+.dropdown:hover .lvm_options {
+	height: 110px;
+	width: 120px;
+	background-color: white;
+	border-top: 1px solid #EEE;
+	border-left: 2px solid #EEE;
+	border-bottom: 2px solid #EEE;
+	border-right: 2px solid #EEE;
+}
+.dropdown:hover .lvm_options{
+	-webkit-transition-property: height, background-color, width;
+	-moz-transition-property: height, background-color, width;
+	-o-transition-property: height, background-color, width;
+	-ms-transition-property: height, background-color, width;
+	transition-property: height, background-color, width;
+	-webkit-transition-duration: .5s, .3s, .4s;
+	-moz-transition-duration: .5s, .3s, .4s;
+	-o-transition-duration: .5s, .3s, .4s;
+	-ms-transition-duration: .5s, .3s, .4s;
+	transition-duration: .5s, .3s, .4s;
+	-webkit-transition-timing-function: ease-in-out, ease-out, ease-in-out;
+	-moz-transition-timing-function: ease-in-out, ease-out, ease-in-out;
+	-o-transition-timing-function: ease-in-out, ease-out, ease-in-out;
+	-ms-transition-timing-function: ease-in-out, ease-out, ease-in-out;
+	transition-timing-function: ease-in-out, ease-out, ease-in-out;  
+}
+
+.termo {
+	padding-right: 1em;
+}
+
+.lvm_options:focus,.dropdown:focus {
+	outline: none;
+}
+
+.lvm_options span {
+	display: block;
+	padding: 5px 15px;
+	width: 120px;
+	text-align: left;
+	left: 0;
+}
+.lvm_options span:hover {
+	background-color: #D5D5D5;
+}
+
+span.arrow-down {
+	display: block;
+	padding-left: 4px;
+	width: 0;
+	line-height: 1em;
+	background:transparent url(../../../../wp-admin/images/arrows.png) no-repeat left -5px;
+}
+span.arrow-down:hover{
+	padding-left: 5px;
+	background-color: transparent;
+	width: 1em;
 }
