@@ -1,5 +1,6 @@
-#cpt_lvm_people_dados_pessoais .inside{
-	margin: 0 !important;
+#cpt_lvm_people_dados_pessoais .inside, 
+#cpt_lvm_people_contatos .inside {
+	margin: 0;
 	padding: 0;
 }
 
@@ -18,6 +19,20 @@
 	padding: 6px 10px 8px;
 }
 
-.lvm_separador .all-long{
+.all-long{
 	width: 98%;
+}
+.mezzo{
+    width:50%;
+}
+
+.lvm_contatos{
+	margin-right: 15px;
+}
+
+.lvm_contatos.label {
+	width: 15%;
+	text-align: right;
+	color: #5C5C5C;
+	display: inline-block;
 }

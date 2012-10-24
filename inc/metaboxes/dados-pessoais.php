@@ -1,9 +1,9 @@
-<div class="lvm_separador">
+    <div class="lvm_separador">
 
         <p>
             <?php $value = get_post_meta($post_id, '_lvm_people_lattes', true);  ?>
-            <label id="label-lattes" class="required" for="lvm_people_lattes">Endereço web do Currículo Lattes</label>
-            <input type="url" id="lattes" name="lvm_people_lattes" class="required" value="<?php echo $value; ?>" placeholder="http://" required="required">
+            <label id="label-lattes" class="required" for="lvm_people_lattes">Endereço web do Currículo Lattes:</label>
+            <input type="url" id="lattes" name="lvm_people_lattes" class="required mezzo" value="<?php echo $value; ?>" placeholder="http://" required="required">
         </p>
 
     </div>

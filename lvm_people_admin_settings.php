@@ -137,12 +137,12 @@ function cpt_lvm_people_admin_interface_init() {
       
         add_meta_box( 
             'cpt_lvm_people_contatos',               //html id that will be applied to this metabox
-            'Contatos',                                      //appears at the top of the new metabox when displayed
+            'Contatos',                              //appears at the top of the new metabox when displayed
             'cpt_lvm_people_contatos_html_def',      //callback >  the function which will load the html into the metabox
-            'lvm_people',                                      //name of our custom post type
-            'normal',                                                       //where the box will appear. can be "normal", "advanced" or "side"
-            'high',                                                         //priority within the context where the boxes should show ('high', 'core', 'default' or 'low') );
-            ''                                                              //(optional) Arguments to pass into your callback function. The callback will receive the  object and whatever parameters are passed through this variable
+            'lvm_people',                            //name of our custom post type
+            'normal',                                //where the box will appear. can be "normal", "advanced" or "side"
+            'high',                                  //priority within the context where the boxes should show ('high', 'core', 'default' or 'low') );
+            ''                                       //(optional) Arguments to pass into your callback function. The callback will receive the  object and whatever parameters are passed through this variable
         );
 
     }
@@ -150,26 +150,24 @@ function cpt_lvm_people_admin_interface_init() {
 }
 
 // Function to display Dados Pessoais meta box contents
-function cpt_lvm_people_dados_pessoais_html_def( $post_type ) {
+function cpt_lvm_people_dados_pessoais_html_def() {
 
     global $post;
     $post_id = $post->ID;
 
-    /**
-     * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-     * HERE IS THE SPACE TO INCLUDE THE HTML OF METABOXES
-     * //////////////////////////////////////////////////
-     */
-
     require ("inc/metaboxes/dados-pessoais.php");
     
-    /**
-     * ///////////////////////////////////////////
-     * END OF THE SPACE TO INCLUDE THE METABOXES
-     * ///////////////////////////////////////////
-     */
 }
 
+// Function to display Contatos meta box contents
+function cpt_lvm_people_contatos_html_def() {
+
+    global $post;
+    $post_id = $post->ID;
+
+    require ("inc/metaboxes/contatos.php");
+    
+}
 
 
 // Register function to be called when posts are saved
