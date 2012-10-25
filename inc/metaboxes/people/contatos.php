@@ -7,11 +7,11 @@
 
         <div class="label mini dropdown">
             <span contenteditable="true" class="termo">Email</span>
-            <div class="lvm_options hide">
+            <div class="lvm_options">
                 <span class="contatos arrow-down"></span>
-                <span>residencial</span>
-                <span>comercial</span>
-                <span>personalizar</span>
+                <span>Residencial</span>
+                <span>Comercial</span>
+                <span>Personalizar</span>
             </div>
         </div>
         <input type="text" class="xlarge" name="lvm_people_email_1" placeholder="example@ufrj.br">
