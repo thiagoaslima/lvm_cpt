@@ -139,16 +139,16 @@ function cpt_lvm_people_admin_interface_init() {
 
     if ( is_admin() ){
 
-        wp_enqueue_style( 'lvm_cpt', plugins_url( 'css/lvm_cpt_styles.css', __FILE__ ) );
+        wp_enqueue_style( 'lvm_cpt', plugins_url( 'css/lvm_people_styles.css', __FILE__ ) );
 
         add_meta_box( 
-            'cpt_lvm_people_dados_pessoais',         //html id that will be applied to this metabox
-            'Dados Pessoais',                                //appears at the top of the new metabox when displayed
+            'cpt_lvm_people_dados_pessoais',          //html id that will be applied to this metabox
+            'Dados Pessoais',                         //appears at the top of the new metabox when displayed
             'cpt_lvm_people_dados_pessoais_html_def', //callback >  the function which will load the html into the metabox
-            'lvm_people',                                //name of our custom post type
-            'normal',                                                 //where the box will appear. can be "normal", "advanced" or "side"
-            'high',                                                   //priority within the context where the boxes should show ('high', 'core', 'default' or 'low') );
-            ''                                                        //(optional) Arguments to pass into your callback function. The callback will receive the object and whatever parameters are passed through this variable
+            'lvm_people',                             //name of our custom post type
+            'normal',                                 //where the box will appear. can be "normal", "advanced" or "side"
+            'high',                                   //priority within the context where the boxes should show ('high', 'core', 'default' or 'low') );
+            ''                                        //(optional) Arguments to pass into your callback function. The callback will receive the object and whatever parameters are passed through this variable
         );
 
       
