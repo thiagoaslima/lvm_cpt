@@ -28,6 +28,15 @@ License:     GPL2
 // GLOSSÁRIO
 // cpt -> custom post type
 
+
+// i18n function
+// add_action( 'init', 'lvm_i18n' );
+// Initialize this plugin. Called by 'init' hook.
+// function lvm_i18n() {
+//   load_plugin_textdomain( 'lvm_cpt', 'wp-content/plugins/lvm_cpt_people/languages' );
+// }
+
+
 // Controls the javascript load
 // http://scribu.net/wordpress/optimal-script-loading.html
 add_action('init', 'register_my_script');

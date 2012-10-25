@@ -18,14 +18,12 @@
 	    }
 	};
 
-
 	$(".lvm_options span").on("click", function (e) {
 		var $this = $(this),
 			$opt = $this.parent();
 			$termo = $opt.siblings(".termo");
 
-		if ($this.html() == "Personalizar" ){
-			
+		if ($this.html() == "Personalizar"){
 			$termo.focus().selectText();
 		} else {
 			var termo = $this.html();
@@ -33,9 +31,20 @@
 		}
 
 		$opt.css("display","none");
+
 		$termo.on("blur", function (e) {
 			$opt.css("display", "block");
 		})
+	})
+
+	$(".termo").on( "blur", function (e){
+		var $this = $(this),
+			id = $this.attr("id"),
+			val = $this.html(),
+			$input = $("input[name='" + id + "']");
+
+		console.log( val + " : " + id );
+		$input.val(val);
 	})
 
 	$("#cpt_lvm_people_dados_pessoais").on("change", "#lvm_people_nome, #lvm_people_sobrenome", function (e) {
@@ -90,11 +99,9 @@
 			cit = prep + " " + cit;
 		}
 		sobreIn = iniciais(sobreSep);
-
 		cit = cit + nomeIn + sobreIn;
 
 		$citacao.val(cit);
-			
 	})
 
 })(jQuery);
