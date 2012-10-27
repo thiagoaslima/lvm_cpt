@@ -72,17 +72,17 @@ select{
 
 .large {
 	margin-right: 6px;
-	width: 56%;
+	width: 55%;
 }
 
 .xlarge {
 	margin-right: 6px;
-	width: 70%;
+	width: 69%;
 }
 
 .xxlarge {
 	margin-right: 6px;
-	width: 84%;
+	width: 83%;
 }
 
 .giant {
@@ -91,32 +91,32 @@ select{
 }
 
 .shift-mini {
-	padding: 0 3px 0 6px;
+	padding: 0 10px;
 	margin-left: 13%;
 }
 
 .shift-small {
-	padding: 0 3px 0 6px;
+	padding: 0 10px;
 	margin-left: 27%;
 }
 
 .shift-medium {
-	padding: 0 3px 0 6px;
+	padding: 0 10px;
 	margin-left: 41%;
 }
 
 .shift-large {
-	padding: 0 3px 0 6px;
+	padding: 0 10px;
 	margin-left: 56%;
 }
 
 .shift-xlarge {
-	padding: 0 3px 0 6px;
+	padding: 0 10px;
 	margin-left: 70%;
 }
 
 .shift-xxlarge {
-	padding: 0 3px 0 6px;
+	padding: 0 10px;
 	margin-left: 84%;
 }
 

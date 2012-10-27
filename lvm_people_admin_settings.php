@@ -149,6 +149,12 @@ function cpt_lvm_people_admin_interface_init() {
     if ( is_admin() ){
 
         wp_enqueue_style( 'lvm_cpt', plugins_url( 'css/lvm_people_styles.css', __FILE__ ) );
+        add_action('admin_footer', "add_templates" );
+        function add_templates(){
+            $url = plugins_url( 'inc/metaboxes/people/contatos-tmp.html', __FILE__ );
+            $tmp = file_get_contents($url);
+            print $tmp;
+        }
 
         add_meta_box( 
             'cpt_lvm_people_dados_pessoais',          //html id that will be applied to this metabox
