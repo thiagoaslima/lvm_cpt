@@ -2,24 +2,23 @@
 
 	// amplia a biblioteca jQuery adicionando a função de selecionar determinado texto
 	// função usada na interface dos Contatos
-	jQuery.fn.selectText = function(){
-    var doc = document, 
-	    element = this[0], 
-	    range, selection;
+	$.fn.selectText = function(){
+	    var doc = document, 
+		    element = this[0], 
+		    range, selection;
 
 	    if (doc.body.createTextRange) {
-	        range = document.body.createTextRange();
+	        range = doc.body.createTextRange();
 	        range.moveToElementText(element);
 	        range.select();
 	    } else if (window.getSelection) {
 	        selection = window.getSelection();        
-	        range = document.createRange();
+	        range = doc.createRange();
 	        range.selectNodeContents(element);
 	        selection.removeAllRanges();
 	        selection.addRange(range);
 	    }
 	};
-
 
 	// preenche automaticamente os campos title (hidden) e Citação
 	// a partir dos dados inseridos nos campos Nome e Sobrenome
@@ -30,17 +29,18 @@
 			nome = $.trim($nome.val()),
 			$sobre = $("#lvm_people_sobrenome"),
 			sobre = $.trim($sobre.val()),
-			title = nome + " " + sobre;
+			title = nome + " " + sobre,
+
+			//citacao
+			nomeSep = nome.split(" "),
+			sobreSep = sobre.split(" "),
+			cit = ( sobre !== "" ) ? sobreSep.pop() + ", " : "";		
 
 		//title
-		$title.val(title)
+		$title.val(title);
 		$("#title-prompt-text").css("visibility", "hidden");
 
-		//citacao
-		var nomeSep = nome.split(" "),
-			sobreSep = sobre.split(" "),
-			cit = ( sobre != "" ) ? sobreSep.pop() + ", " : "";		
-
+		// citação
 		function iniciais (elem){
 
 			if( !elem.length ) return "";
@@ -54,7 +54,7 @@
 			while( i < len ){
 				var parte = elem[i];
 
-				if ( parte != "de" && parte != "da" && parte != "do" && parte != "das" && parte != "dos" && parte != "" && parte != " " ) {
+				if ( parte !== "de" && parte !== "da" && parte !== "do" && parte !== "das" && parte !== "dos" && parte !== "" && parte !== " " ) {
 					var inicial = parte.charAt(0).toUpperCase() + ". ";
 					iniciais += inicial;
 				}
@@ -107,7 +107,7 @@
 	})
 
     // atualiza o campo hidden do formulário que será passado no submit
-	$(".termo").on( "blur", function (e){
+	$("#cpt_lvm_people_contatos").on( "blur", ".termo", function (e){
 		var $this = $(this),
 			id = $this.attr("id"),
 			val = $this.html(),
@@ -119,12 +119,12 @@
 
 
 	// adicionar novo campo (email, telefone ou endereço)
-	$(".add").on("click", function (evt){
+	$("#cpt_lvm_people_contatos").on("click", ".add", function (evt){
 		evt.preventDefault();
 
 		var $this = $(this),
 			$obj = $this.parent(".lvm_separador"),
-		    contato, n;
+		    contato, qtde_contato;
 
 		if($obj.hasClass("tel")){
 			contato = "tel";
@@ -134,14 +134,44 @@
 			contato = "end";
 		}
 
-		var $n = $("#lvm_people_" + contato + "_n"),
-			n = parseInt($n.val()) + 1,
+		var $qtde_contato = $("#lvm_people_" + contato + "_n"),
+			qtde_contato = Number($qtde_contato.val()) + 1,
 			$tmp = $("#" + contato + "-tmp").html(),
-			$tmp = $tmp.replace(/{{n}}/g, n);
+			$tmp = $tmp.replace(/{{n}}/g, qtde_contato);
 
-		$n.val(n);
-		$this.insertBefore($tmp);
+		$qtde_contato.val(qtde_contato);
+		$this.before($tmp);
+
+		if( qtde_contato == 2 ){
+			$obj.find(".lixeira").css("visibility", "visible");
+		}
 	})
+
+	//remover campo (email, telefone ou endereço)
+	$("#cpt_lvm_people_contatos").on("click", ".lixeira", function(evt){
+		var $this = $(this),
+			$line = $this.parents(".line"),
+			$obj = $this.parents(".lvm_separador"),
+			$qtde_contato = $obj.children("input[type='hidden']"),
+			qtde = $qtde_contato.val();
+
+			// havendo apenas um grupo de contato
+			// volta os campos ao default
+			if( qtde <= 2 ) { 
+				$obj.find(".lixeira").css("visibility", "hidden");
+			}
+			
+			$qtde_contato.val( (+qtde) - 1 );
+			$line.remove();
+
+
+
+	})
+
+	// some com os botoes lixeira assim que o DOM carrega
+	init = (function(){
+		$(".lixeira").css("visibility", "hidden");
+	}()) 
 
 
 })(jQuery);

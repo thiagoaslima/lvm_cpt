@@ -10,9 +10,12 @@
             </div>
         </div>
         <input type="hidden" name="tipo_email_{{n}}" value="Email">
-        <input type="text" class="xlarge" name="lvm_people_email_{{n}}" placeholder="example@ufrj.br">
+        <input type="text" class="large" name="lvm_people_email_{{n}}" placeholder="example@ufrj.br">
         <span class="mini">
             <input type="checkbox" name="lvm_people_email_boolean_{{n}}" value="true"> Público
+        </span>
+        <span class="mini">
+            <span class="lixeira">Apagar</span>
         </span>
     </div>
 </script>
@@ -20,7 +23,7 @@
 <script id="tel-tmp" type="contatos/templates">
     <div class="tel_{{n}} line">
         <div class="label mini dropdown">
-            <span contenteditable="true" class="termo" id="tipo_tel_{{n}}">Tel</span>
+            <span contenteditable="true" class="termo" id="tipo_tel_{{n}}">Telefone</span>
             <div class="lvm_options">
                 <span class="contatos arrow-down"></span>
                 <span>Residencial</span>
@@ -28,10 +31,13 @@
                 <span>Personalizar</span>
             </div>
         </div>
-        <input type="hidden" name="tipo_tel_{{n}}" value="Tel">
-        <input type="text" class="xlarge" name="lvm_people_tel_{{n}}" placeholder="example@ufrj.br">
+        <input type="hidden" name="tipo_tel_{{n}}" value="Telefone">
+        <input type="text" class="large" name="lvm_people_tel_{{n}}" placeholder="example@ufrj.br">
         <span class="mini">
             <input type="checkbox" name="lvm_people_tel_boolean_{{n}}" value="true"> Público
+        </span>
+        <span class="mini">
+            <span class="lixeira">Apagar</span>
         </span>
     </div>
 </script>
@@ -39,7 +45,7 @@
 <script id="end-tmp" type="contatos/templates">
     <div class="end_{{n}} line">
         <div class="label mini dropdown">
-            <span contenteditable="true" class="termo" id="tipo_end_{{n}}">End</span>
+            <span contenteditable="true" class="termo" id="tipo_end_{{n}}">Endereço</span>
             <div class="lvm_options">
                 <span class="contatos arrow-down"></span>
                 <span>Residencial</span>
@@ -47,10 +53,13 @@
                 <span>Personalizar</span>
             </div>
         </div>
-        <input type="hidden" name="tipo_end_{{n}}" value="End">
-        <input type="text" class="xlarge" name="lvm_people_end_{{n}}" placeholder="example@ufrj.br">
+        <input type="hidden" name="tipo_end_{{n}}" value="Endereço">
+        <input type="text" class="large" name="lvm_people_end_{{n}}" placeholder="example@ufrj.br">
         <span class="mini">
             <input type="checkbox" name="lvm_people_end_boolean_{{n}}" value="true"> Público
+        </span>
+        <span class="mini">
+            <span class="lixeira">Apagar</span>
         </span>
     </div>
 </script>

@@ -37,7 +37,7 @@
 
     </div>
 
-    <div class="lvm_separador_last">
+    <div class="lvm_separador sep_last">
 
         <p>
             <?php $value = get_post_meta($post_id, '_lvm_people_sexo', true);  ?>

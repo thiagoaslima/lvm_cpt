@@ -18,9 +18,12 @@
             </div>
         </div>
         <input type="hidden" name="tipo_email_1" value="Email">
-        <input type="text" class="xlarge" name="lvm_people_email_1" placeholder="example@ufrj.br">
+        <input type="text" class="large" name="lvm_people_email_1" placeholder="example@ufrj.br">
         <span class="mini">
             <input type="checkbox" name="lvm_people_email_boolean_1" value="true"> Público
+        </span>
+        <span class="mini">
+            <span class="lixeira">Apagar</span>
         </span>
     </div>
 
@@ -51,10 +54,13 @@
                 <span>Personalizar</span>
             </div>
         </div>
-        <input type="hidden" name="tipo_tel_1" value-"Telefone">
-        <input type="text" class="xlarge" name="lvm_people_tel_1" placeholder="example@ufrj.br">
+        <input type="hidden" name="tipo_tel_1" value="Telefone">
+        <input type="text" class="large" name="lvm_people_tel_1" placeholder="example@ufrj.br">
         <span class="mini">
             <input type="checkbox" class="shift-mini" name="lvm_people_tel_boolean_1" value="true"> Público
+        </span>
+        <span class="mini">
+            <span class="lixeira">Apagar</span>
         </span>
     </div>
 
@@ -62,7 +68,7 @@
 
 </div>
 
-<div class="lvm_separador_last end">
+<div class="lvm_separador sep_last end">
 
     <input type="hidden" id="lvm_people_end_n" name="lvm_people_end_n" value="1">
     
@@ -82,9 +88,12 @@
             </div>
         </div>
         <input type="hidden" name="tipo_end_1" value="Endereço">
-        <input type="text" class="xlarge" name="lvm_people_end_1" placeholder="example@ufrj.br">
+        <input type="text" class="large" name="lvm_people_end_1" placeholder="example@ufrj.br">
         <span class="mini">
             <input type="checkbox" class="shift-mini" name="lvm_people_end_boolean_1" value="true"> Público
+        </span>
+        <span class="mini">
+            <span class="lixeira">Apagar</span>
         </span>
     </div>
 
