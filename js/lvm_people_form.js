@@ -1,178 +1,251 @@
-(function($){
+var window, document, jQuery;
 
-	// amplia a biblioteca jQuery adicionando a função de selecionar determinado texto
-	// função usada na interface dos Contatos
-	$.fn.selectText = function(){
-	    var doc = document, 
-		    element = this[0], 
-		    range, selection;
+(function ($) {
 
-	    if (doc.body.createTextRange) {
-	        range = doc.body.createTextRange();
-	        range.moveToElementText(element);
-	        range.select();
-	    } else if (window.getSelection) {
-	        selection = window.getSelection();        
-	        range = doc.createRange();
-	        range.selectNodeContents(element);
-	        selection.removeAllRanges();
-	        selection.addRange(range);
-	    }
-	};
+    "use strict";
 
-	// preenche automaticamente os campos title (hidden) e Citação
-	// a partir dos dados inseridos nos campos Nome e Sobrenome
-	$("#cpt_lvm_people_dados_pessoais").on("change", "#lvm_people_nome, #lvm_people_sobrenome", function (e) {
-		var $title = $("#title"),
-			$citacao = $("#lvm_people_citacao"),
-			$nome = $("#lvm_people_nome"),
-			nome = $.trim($nome.val()),
-			$sobre = $("#lvm_people_sobrenome"),
-			sobre = $.trim($sobre.val()),
-			title = nome + " " + sobre,
+    /*
+     * amplia a biblioteca jQuery 
+     * adiciona a função de selecionar determinado texto 
+     * função usada na interface dos Contatos
+    */
+    $.fn.selectText = function () {
+        var doc = document,
+            element = this[0],
+            range,
+            selection;
 
-			//citacao
-			nomeSep = nome.split(" "),
-			sobreSep = sobre.split(" "),
-			cit = ( sobre !== "" ) ? sobreSep.pop() + ", " : "";		
+        if (doc.body.createTextRange) {
+            range = doc.body.createTextRange();
+            range.moveToElementText(element);
+            range.select();
+        } else if (window.getSelection) {
+            selection = window.getSelection();
+            range = doc.createRange();
+            range.selectNodeContents(element);
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    };
 
-		//title
-		$title.val(title);
-		$("#title-prompt-text").css("visibility", "hidden");
+    // preenche automaticamente os campos title (hidden) e Citação
+    // a partir dos dados inseridos nos campos Nome e Sobrenome
+    $("#cpt_lvm_people_dados_pessoais")
+        .on("change", "#lvm_people_nome, #lvm_people_sobrenome", function () {
 
-		// citação
-		function iniciais (elem){
+            var $title = $("#title"),
+                $citacao = $("#lvm_people_citacao"),
+                $nome = $("#lvm_people_nome"),
+                nome = $.trim($nome.val()),
+                $sobre = $("#lvm_people_sobrenome"),
+                sobre = $.trim($sobre.val()),
+                title = nome + " " + sobre,
 
-			if( !elem.length ) return "";
+                //citacao
+                nomeSep = nome.split(" "),
+                sobreSep = sobre.split(" "),
+                citacao = (sobre !== "") ? sobreSep.pop() + ", " : "",
 
-			var i = 0,
-				len = elem.length,
-				iniciais = "";
-			
-				console.log( len + " : " + elem)
+                //nome e sobrenome
+                nomeIn,
+                sobreIn,
+                sobreSep_lastElem = sobreSep.length - 1,
+                preposicao;
 
-			while( i < len ){
-				var parte = elem[i];
+            //title
+            $title.val(title);
+            $("#title-prompt-text").css("visibility", "hidden");
 
-				if ( parte !== "de" && parte !== "da" && parte !== "do" && parte !== "das" && parte !== "dos" && parte !== "" && parte !== " " ) {
-					var inicial = parte.charAt(0).toUpperCase() + ". ";
-					iniciais += inicial;
-				}
+            function getIniciais(elem) {
 
-				i++;
-			}
+                if (!elem.length) {
+                    return "";
+                }
 
-			return iniciais;
-		}
+                var i,
+                    len = elem.length,
+                    iniciais = "",
+                    parte,
+                    inicial;
 
-		// nome
-		nomeIn = iniciais(nomeSep); 
+                for (i = 0; i < len; i += 1) {
+                    parte = elem[i];
 
-		//sobrenome		
-		if ( sobreSep[sobreSep.length-1] == "de" || sobreSep[sobreSep.length-1] == "da" || sobreSep[sobreSep.length-1] == "do" || sobreSep[sobreSep.length-1] == "das" || sobreSep[sobreSep.length-1] == "dos" ) {
-			var prep = sobreSep.pop();
-			console.log("prep: " + prep);
-			cit = prep + " " + cit;
-		}
-		sobreIn = iniciais(sobreSep);
-		cit = cit + nomeIn + sobreIn;
+                    if (parte !== "de" && parte !== "da" &&
+                            parte !== "do" && parte !== "das" &&
+                            parte !== "dos" && parte !== "" &&
+                            parte !== " ") {
+                        inicial = parte.charAt(0).toUpperCase() + ". ";
+                        iniciais += inicial;
+                    }
+                }
+                return iniciais;
+            }
 
-		$citacao.val(cit);
-	})
+            // definindo as iniciais do nome
+            nomeIn = getIniciais(nomeSep);
+
+            // definindo as iniciais do sobrenome
+
+            // caso haja preposicao antes do último sobrenome
+            // ela é passada para a parte extensa da citação 
+            if (sobreSep[sobreSep_lastElem] === "de" ||
+                    sobreSep[sobreSep_lastElem] === "da" ||
+                    sobreSep[sobreSep_lastElem] === "do" ||
+                    sobreSep[sobreSep_lastElem] === "das" ||
+                    sobreSep[sobreSep_lastElem] === "dos") {
+
+                preposicao = sobreSep.pop();
+                citacao = preposicao + " " + citacao;
+
+            }
+
+            sobreIn = getIniciais(sobreSep);
+            citacao = citacao + nomeIn + sobreIn;
+
+            $citacao.val(citacao);
+        });
 
 
-	// controla a escolha da opção de tipo de contato
-	$(".lvm_options span").on("click", function (e) {
-		var $this = $(this),
-			$opt = $this.parent();
-			$termo = $opt.siblings(".termo");
+    // controla a escolha da opção de tipo de contato
+    $("#cpt_lvm_people_contatos")
+        .on("click", ".lvm_options span", function () {
+            var $this = $(this),
+                $opt = $this.parent(),
+                $termo = $opt.siblings(".termo"),
+                termo;
 
-		if ($this.html() == "Personalizar"){
-			$termo.focus().selectText();
-		} else {
-			var termo = $this.html();
-			$termo.html(termo).focus();
-		}
+            if ($this.html() === "Personalizar") {
+                $termo.focus().selectText();
+            } else {
+                termo = $this.html();
+                $termo.html(termo).focus();
+            }
 
-		// some com a div de opções de tipo
-		// para o caso do usuário apertar enter quando fizer a alteração
-		// a div é controlada via css e portanto continuaria aparecendo 
-		// enquanto o mouse não for movido
-		$opt.css("display","none");
+            // some com a div de opções de tipo
+            // para o caso do usuário apertar enter quando fizer a alteração
+            // a div é controlada via css e portanto continuaria aparecendo 
+            // enquanto o mouse não for movido
+            $opt.css("display", "none");
 
-		// volta com a div de opções de tipo assim que o usuário conclui a decisão do tipo
-		$termo.on("blur", function (e) {
-			$opt.css("display", "block");
-		})
-	})
+            // volta com a div de opções de tipo assim que o usuário 
+            // conclui a decisão do tipo
+            $termo.on("blur", function () {
+                $opt.css("display", "block");
+            });
+        });
 
     // atualiza o campo hidden do formulário que será passado no submit
-	$("#cpt_lvm_people_contatos").on( "blur", ".termo", function (e){
-		var $this = $(this),
-			id = $this.attr("id"),
-			val = $this.html(),
-			$input = $("input[name='" + id + "']");
+    $("#cpt_lvm_people_contatos").on("blur", ".termo", function () {
+        var $this = $(this),
+            id = $this.attr("id"),
+            val = $this.html(),
+            $input = $("input[name='" + id + "']");
 
-		console.log( val + " : " + id );
-		$input.val(val);
-	})
-
-
-	// adicionar novo campo (email, telefone ou endereço)
-	$("#cpt_lvm_people_contatos").on("click", ".add", function (evt){
-		evt.preventDefault();
-
-		var $this = $(this),
-			$obj = $this.parent(".lvm_separador"),
-		    contato, qtde_contato;
-
-		if($obj.hasClass("tel")){
-			contato = "tel";
-		}else if ($obj.hasClass("email")){
-			contato = "email";
-		}else if ($obj.hasClass("end")){
-			contato = "end";
-		}
-
-		var $qtde_contato = $("#lvm_people_" + contato + "_n"),
-			qtde_contato = Number($qtde_contato.val()) + 1,
-			$tmp = $("#" + contato + "-tmp").html(),
-			$tmp = $tmp.replace(/{{n}}/g, qtde_contato);
-
-		$qtde_contato.val(qtde_contato);
-		$this.before($tmp);
-
-		if( qtde_contato == 2 ){
-			$obj.find(".lixeira").css("visibility", "visible");
-		}
-	})
-
-	//remover campo (email, telefone ou endereço)
-	$("#cpt_lvm_people_contatos").on("click", ".lixeira", function(evt){
-		var $this = $(this),
-			$line = $this.parents(".line"),
-			$obj = $this.parents(".lvm_separador"),
-			$qtde_contato = $obj.children("input[type='hidden']"),
-			qtde = $qtde_contato.val();
-
-			// havendo apenas um grupo de contato
-			// volta os campos ao default
-			if( qtde <= 2 ) { 
-				$obj.find(".lixeira").css("visibility", "hidden");
-			}
-			
-			$qtde_contato.val( (+qtde) - 1 );
-			$line.remove();
+        $input.val(val);
+    });
 
 
+    // adicionar novo campo (email, telefone ou endereço)
+    $("#cpt_lvm_people_contatos").on("click", ".add", function (evt) {
+        evt.preventDefault();
 
-	})
+        function getContato($obj) {
+            var contato;
 
-	// some com os botoes lixeira assim que o DOM carrega
-	init = (function(){
-		$(".lixeira").css("visibility", "hidden");
-	}()) 
+            if ($obj.hasClass("tel")) {
+                contato = "tel";
+            } else if ($obj.hasClass("email")) {
+                contato = "email";
+            } else if ($obj.hasClass("end")) {
+                contato = "end";
+            }
+
+            return contato;
+        }
+
+        var $this = $(this),
+            $obj = $this.parent(".lvm_separador"),
+            contato = getContato($obj),
+
+            $qtde_contato = $("#lvm_people_" + contato + "_n"),
+            qtde_contato = Number($qtde_contato.val()) + 1,
+            $tmp = $("#" + contato + "-tmp").html(),
+            $tmpUpdated = $tmp.replace(/{{n}}/g, qtde_contato);
+
+        $qtde_contato.val(qtde_contato);
+        $this.before($tmpUpdated);
+
+        if (qtde_contato === 2) {
+            $obj.find(".lixeira").css("visibility", "visible");
+        }
+    });
+
+    //remover campo (email, telefone ou endereço)
+    $("#cpt_lvm_people_contatos").on("click", ".lixeira", function () {
+        
+        function getContato($obj) {
+            var contato;
+
+            if ($obj.hasClass("tel")) {
+                contato = "tel";
+            } else if ($obj.hasClass("email")) {
+                contato = "email";
+            } else if ($obj.hasClass("end")) {
+                contato = "end";
+            }
+
+            return contato;
+        }
+
+        function organizeNumbers($obj, contato) {
+            var $lines = $obj.find(".line"),
+                n_lines = $lines.length,
+                line_class,
+                $line,
+                i;
+
+            for (i = 0; i < n_lines; i += 1){
+                $line = $lines[i];
+                line_class = $line.class();
+
+                $line.removeClass(line_class).addClass(contato + "_" + i);
+                
+            }
+        }
+
+        var $this = $(this),
+            $line = $this.parents(".line"),
+            $obj = $this.parents(".lvm_separador"),
+            $qtde_contato = $obj.children("input[type='hidden']"),
+            qtde = $qtde_contato.val(),
+            contato = getContato($obj);
+
+        // havendo apenas um grupo de contato
+        // esconde os botoes lixeira
+        if (qtde <= 2) {
+            $obj.find(".lixeira").css("visibility", "hidden");
+        }
+
+        $qtde_contato.val(Number(qtde) - 1);
+        $line.remove();
+
+        /* div class="email_{{n}}
+           span id="tipo_email_{{n}}"
+           input name="tipo_email_{{n}}"
+        name="lvm_people_email_{{n}}"
+        name="lvm_people_email_boolean_{{n}}"*/
+
+        var classe = "span[id*=\"tipo_" + contato + "_\"]"; 
+        console.log( $(classe) );
+        
+    });
+
+    // some com os botoes lixeira assim que o DOM carrega
+    (function () {
+        $(".lixeira").css("visibility", "hidden");
+    }());
 
 
-})(jQuery);
+}(jQuery));
 

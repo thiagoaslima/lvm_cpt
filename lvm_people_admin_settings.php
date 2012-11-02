@@ -49,7 +49,7 @@ function register_my_script() {
 function print_my_script() {
     global $post;
  
-    if( $post->post_type != "lvm_people" ) return;
+    if( $post && $post->post_type != "lvm_people" ) return;
  
     wp_print_scripts('lvm_people_form');
 }
