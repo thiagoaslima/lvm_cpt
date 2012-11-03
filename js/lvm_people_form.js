@@ -1,6 +1,4 @@
-var window, document, jQuery;
-
-(function ($) {
+(function ($, window, document) {
 
     "use strict";
 
@@ -183,7 +181,7 @@ var window, document, jQuery;
 
     //remover campo (email, telefone ou endereço)
     $("#cpt_lvm_people_contatos").on("click", ".lixeira", function () {
-        
+
         function getContato($obj) {
             var contato;
 
@@ -198,28 +196,14 @@ var window, document, jQuery;
             return contato;
         }
 
-        function organizeNumbers($obj, contato) {
-            var $lines = $obj.find(".line"),
-                n_lines = $lines.length,
-                line_class,
-                $line,
-                i;
-
-            for (i = 0; i < n_lines; i += 1){
-                $line = $lines[i];
-                line_class = $line.class();
-
-                $line.removeClass(line_class).addClass(contato + "_" + i);
-                
-            }
-        }
-
         var $this = $(this),
             $line = $this.parents(".line"),
             $obj = $this.parents(".lvm_separador"),
             $qtde_contato = $obj.children("input[type='hidden']"),
             qtde = $qtde_contato.val(),
-            contato = getContato($obj);
+            contato = getContato($obj),
+            $container = (document.createElement("div")) ?
+                    $(document.createElement("div")) : $("div");
 
         // havendo apenas um grupo de contato
         // esconde os botoes lixeira
@@ -230,15 +214,22 @@ var window, document, jQuery;
         $qtde_contato.val(Number(qtde) - 1);
         $line.remove();
 
-        /* div class="email_{{n}}
-           span id="tipo_email_{{n}}"
-           input name="tipo_email_{{n}}"
-        name="lvm_people_email_{{n}}"
-        name="lvm_people_email_boolean_{{n}}"*/
+        $obj.find(".line").each(function (index) {
+            var $this = $(this),
+                i = index + 1,
+                expression = new RegExp(contato + "_[0-9]{1,}", "gi"),
+                newText = contato + "_" + i,
+                update = $this.html().replace(expression, newText),
+                $div = (document.createElement("div")) ?
+                        $(document.createElement("div")) : $("div"),
+                classes = contato + "_" + i +  " line";
 
-        var classe = "span[id*=\"tipo_" + contato + "_\"]"; 
-        console.log( $(classe) );
-        
+            $div.addClass(classes);
+            $div.append(update);
+            $container.append($div);
+        }).remove();
+
+        $obj.children("input[type=\"hidden\"]").after($container.html());
     });
 
     // some com os botoes lixeira assim que o DOM carrega
@@ -247,5 +238,5 @@ var window, document, jQuery;
     }());
 
 
-}(jQuery));
+}(jQuery, window, document));
 

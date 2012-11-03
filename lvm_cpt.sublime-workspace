@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"line",
+				"line_class"
+			],
+			[
 				"q",
 				"qtde_contato"
 			],
@@ -344,7 +348,7 @@
 			"file": "lvm_people_admin_settings.php",
 			"settings":
 			{
-				"buffer_size": 10851,
+				"buffer_size": 10860,
 				"line_ending": "Windows"
 			}
 		},
@@ -352,7 +356,7 @@
 			"file": "inc/metaboxes/people/contatos-tmp.html",
 			"settings":
 			{
-				"buffer_size": 2662,
+				"buffer_size": 2805,
 				"line_ending": "Windows"
 			}
 		},
@@ -360,15 +364,7 @@
 			"file": "js/lvm_people_form.js",
 			"settings":
 			{
-				"buffer_size": 4773,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/InTreat_s1e01.srt",
-			"settings":
-			{
-				"buffer_size": 29625,
+				"buffer_size": 7816,
 				"line_ending": "Windows"
 			}
 		},
@@ -404,6 +400,22 @@
 		"selected_items":
 		[
 			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"comm",
+				"Toggle Block Comment"
+			],
+			[
+				"syn jq",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"jq",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
 				"pa",
 				"Package Control: Remove Package"
 			],
@@ -412,16 +424,8 @@
 				"Package Control: Disable Package"
 			],
 			[
-				"pac",
-				"Package Control: Install Package"
-			],
-			[
 				"html ",
 				"Snippet: DOCTYPE HTML"
-			],
-			[
-				"jq",
-				"Snippet: jQuery Plugin Boilerplate"
 			],
 			[
 				"pack",
@@ -745,6 +749,12 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/InTreat_s1e01.srt",
+		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e02.ssa",
+		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e01.ssa",
+		"/C/VirtualDub/demo.ssa",
+		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e03.ssa",
+		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e04.ssa",
 		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/periodicos/linha de frente/46_out-30/pagina/index.html",
 		"/C/Users/Thiago/Desktop/Borgias S2/leg/e09.srt",
 		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/08_agosto/clima/pecas/emkt/index.html",
@@ -866,13 +876,7 @@
 		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/1a turma/names3.xml",
 		"/C/xampp/htdocs/dev/hash.php",
 		"/c/xampp/htdocs/dev/hash.php",
-		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/lvm_people_admin_fields.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/fields/lvm_radio_field",
-		"/C/Users/Thiago/Documents/Downloads/Kill Bill Vol 1 KLAXXON/Kill Bill vol 1 KLAXXON.srt",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/forms/text-field.php",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/DocBlockr/Base File.sublime-settings",
-		"/C/xampp/htdocs/dev/lvm.dev/data-requested.txt"
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf"
 	],
 	"find":
 	{
@@ -890,6 +894,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"obj.hasClass",
+			"getContato(obj)",
+			"cit",
+			"cit ",
+			"cit",
+			"prep",
+			"sobreSep.length-1",
+			"$tmp",
+			" == ",
+			"==",
+			"</i>",
+			"<i>",
+			"</i>",
+			"<i>",
+			"</i>",
+			"<i>",
+			"</i>",
+			"<i>",
 			"!=",
 			"45",
 			"br",
@@ -999,25 +1021,7 @@
 			"Itu",
 			"cursando",
 			"Micheletti",
-			"44",
-			"<end>",
-			"end-pt",
-			"<end>",
-			"<planta>",
-			"<end>",
-			"Planta ",
-			"text",
-			"7",
-			"6",
-			"require",
-			"{6",
-			"5",
-			"=>",
-			"$_",
-			"$",
-			"//",
-			"\\",
-			"cpt_lvm_people_version"
+			"44"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1044,7 +1048,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1196,7 +1200,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 277.0,
+						"translation.y": 67.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1206,15 +1210,15 @@
 					"file": "lvm_people_admin_settings.php",
 					"settings":
 					{
-						"buffer_size": 10851,
+						"buffer_size": 10860,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1001,
-								1001
+								1606,
+								1606
 							]
 						],
 						"settings":
@@ -1312,7 +1316,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2029.0,
+						"translation.y": 518.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1322,15 +1326,31 @@
 					"file": "inc/metaboxes/people/contatos-tmp.html",
 					"settings":
 					{
-						"buffer_size": 2662,
+						"buffer_size": 2805,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2641,
-								2641
+								66,
+								77
+							],
+							[
+								186,
+								202
+							],
+							[
+								504,
+								520
+							],
+							[
+								584,
+								606
+							],
+							[
+								708,
+								738
 							]
 						],
 						"settings":
@@ -1438,15 +1458,15 @@
 					"file": "js/lvm_people_form.js",
 					"settings":
 					{
-						"buffer_size": 4773,
+						"buffer_size": 7816,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1127,
-								1127
+								6799,
+								6799
 							]
 						],
 						"settings":
@@ -1539,131 +1559,17 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/jQuery/Syntaxes/jQueryJavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 207.0,
+						"translation.y": 2917.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/InTreat_s1e01.srt",
-					"settings":
-					{
-						"buffer_size": 29625,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "inc/metaboxes/people/dados-pessoais.php",
 					"settings":
 					{
@@ -1773,13 +1679,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 606.0,
+						"translation.y": 186.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "css/lvm_people_styles.css",
 					"settings":
 					{
@@ -1894,7 +1800,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "inc/metaboxes/people/contatos.php",
 					"settings":
 					{
@@ -1905,8 +1811,8 @@
 						"selection":
 						[
 							[
-								1963,
-								1963
+								1875,
+								1569
 							]
 						],
 						"settings":
