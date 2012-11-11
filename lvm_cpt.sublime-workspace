@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"conta",
+				"container"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"update",
+				"updateHtml"
+			],
+			[
+				"new",
+				"newText"
+			],
+			[
+				"ne",
+				"newText"
+			],
+			[
 				"line",
 				"line_class"
 			],
@@ -228,10 +248,6 @@
 				"unique"
 			],
 			[
-				"new",
-				"new_version"
-			],
-			[
 				"se",
 				"send_groups"
 			],
@@ -353,18 +369,26 @@
 			}
 		},
 		{
-			"file": "inc/metaboxes/people/contatos-tmp.html",
+			"file": "inc/metaboxes/people/contatos-save.php",
 			"settings":
 			{
-				"buffer_size": 2805,
+				"buffer_size": 312,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Thiago/Desktop/coursera/Python/a3/a3.py",
+			"settings":
+			{
+				"buffer_size": 3684,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "js/lvm_people_form.js",
 			"settings":
 			{
-				"buffer_size": 7816,
+				"buffer_size": 7867,
 				"line_ending": "Windows"
 			}
 		},
@@ -380,7 +404,7 @@
 			"file": "css/lvm_people_styles.css",
 			"settings":
 			{
-				"buffer_size": 5020,
+				"buffer_size": 4984,
 				"line_ending": "Windows"
 			}
 		},
@@ -396,12 +420,24 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 173.0,
 		"selected_items":
 		[
 			[
+				"lvm",
+				"Snippet: LVM: save metadata"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
 				"pac",
-				"Package Control: Install Package"
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
 			],
 			[
 				"comm",
@@ -416,20 +452,12 @@
 				"Set Syntax: jQuery (JavaScript)"
 			],
 			[
-				"pa",
-				"Package Control: Remove Package"
-			],
-			[
 				"disab",
 				"Package Control: Disable Package"
 			],
 			[
 				"html ",
 				"Snippet: DOCTYPE HTML"
-			],
-			[
-				"pack",
-				"Package Control: Remove Package"
 			],
 			[
 				"packa",
@@ -454,10 +482,6 @@
 			[
 				"re",
 				"Package Control: Remove Package"
-			],
-			[
-				"lvm",
-				"Snippet: LVM: save metadata"
 			],
 			[
 				"syn",
@@ -749,9 +773,11 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/InTreat_s1e01.srt",
+		"/C/Users/Thiago/Downloads/Visual Complexity - Mapping Patterns of Information PDF.pdf",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/people/contatos-tmp.html",
 		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e02.ssa",
 		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e01.ssa",
+		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/InTreat_s1e01.srt",
 		"/C/VirtualDub/demo.ssa",
 		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e03.ssa",
 		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e04.ssa",
@@ -874,9 +900,7 @@
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/lvm_admin_fields.php",
 		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/1a turma/names.xml",
 		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/1a turma/names3.xml",
-		"/C/xampp/htdocs/dev/hash.php",
-		"/c/xampp/htdocs/dev/hash.php",
-		"/C/xampp/apache/conf/extra/httpd-vhosts.conf"
+		"/C/xampp/htdocs/dev/hash.php"
 	],
 	"find":
 	{
@@ -1217,8 +1241,8 @@
 						"selection":
 						[
 							[
-								1606,
-								1606
+								1809,
+								1809
 							]
 						],
 						"settings":
@@ -1316,41 +1340,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 518.0,
+						"translation.y": 3649.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "inc/metaboxes/people/contatos-tmp.html",
+					"file": "inc/metaboxes/people/contatos-save.php",
 					"settings":
 					{
-						"buffer_size": 2805,
+						"buffer_size": 312,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								66,
-								77
-							],
-							[
-								186,
-								202
-							],
-							[
-								504,
-								520
-							],
-							[
-								584,
-								606
-							],
-							[
-								708,
-								738
+								312,
+								312
 							]
 						],
 						"settings":
@@ -1443,7 +1451,121 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Thiago/Desktop/coursera/Python/a3/a3.py",
+					"settings":
+					{
+						"buffer_size": 3684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								594,
+								594
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1454,19 +1576,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "js/lvm_people_form.js",
 					"settings":
 					{
-						"buffer_size": 7816,
+						"buffer_size": 7867,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6799,
-								6799
+								3991,
+								3991
 							]
 						],
 						"settings":
@@ -1560,16 +1682,17 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2917.0,
+						"translation.y": 725.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "inc/metaboxes/people/dados-pessoais.php",
 					"settings":
 					{
@@ -1685,19 +1808,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "css/lvm_people_styles.css",
 					"settings":
 					{
-						"buffer_size": 5020,
+						"buffer_size": 4984,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								129,
-								129
+								1649,
+								1649
 							]
 						],
 						"settings":
@@ -1794,13 +1917,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1920.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "inc/metaboxes/people/contatos.php",
 					"settings":
 					{
@@ -1811,8 +1934,8 @@
 						"selection":
 						[
 							[
-								1875,
-								1569
+								82,
+								64
 							]
 						],
 						"settings":
@@ -1910,7 +2033,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 445.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

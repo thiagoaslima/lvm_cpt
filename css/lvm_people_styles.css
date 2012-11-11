@@ -240,14 +240,12 @@ span.lixeira{
 	border: 0;
   	font: 0/0 a;
   	text-shadow: none;
-  	color: transparent;  	
-  	width: 25px;
-  	height: 17px;
-  	display: inline-block;
-  	*display: inline; /*ie7*/
+  	color: transparent;
   	position: relative;
   	top:-12px;
   	left:20px;
+  	display: inline-block;
+  	*display: inline; /*ie7*/
 }
 span.lixeira:hover{
 	background:transparent url(i/trash.png) no-repeat center -19px;
