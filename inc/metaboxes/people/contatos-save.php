@@ -21,19 +21,24 @@
         // atualiza os dados passados
         for( $i = 0; $i < $qtde_nova; $i++ ){
 
-            $tipo_field = 'tipo_'. $contato . '_' . $i;
+            $tipo_field = 'lvm_people_tipo_'. $contato . '_' . $i;
             $contato_field = 'lvm_people_' . $contato . '_' . $i;
+            $boolean_field = 'lvm_people_boolean_' . $contato . '_' . $i;
+            $bool = (isset($_POST[$boolean_field]));
 
             if ( isset($_POST[$tipo_field]) && isset($_POST[$contato_field]) &&
                  $_POST[$tipo_field] != "" && $_POST[$contato_field] != "" ) {
                 
                 update_post_meta( $post_id, $tipo_field, $_POST[$tipo_field] );
                 update_post_meta( $post_id, $contato_field, $_POST[$contato_field] );
+                update_post_meta( $post_id, $boolean_field, $bool );
 
             } else {
                 
                 delete_post_meta($post_id, $tipo_field );
                 delete_post_meta($post_id, $contato_field );
+                delete_post_meta($post_id, $boolean_field );
+
             }
         
         }
@@ -42,11 +47,13 @@
 
             for( $qtde_nova; $qtde_nova < $qtde_gravada; $qtde_nova++ ){
 
-                $tipo_field = 'tipo_'. $contato . '_' . $i;
+                $tipo_field = 'lvm_people_tipo_'. $contato . '_' . $i;
                 $contato_field = 'lvm_people_' . $contato . '_' . $i;
+                $boolean_field = 'lvm_people_boolean_' . $contato . '_' . $i;
 
                 delete_post_meta($post_id, $tipo_field );
                 delete_post_meta($post_id, $contato_field );
+                delete_post_meta($post_id, $boolean_field );
             }
 
         }

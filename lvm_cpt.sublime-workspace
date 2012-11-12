@@ -4,11 +4,27 @@
 		"selected_items":
 		[
 			[
-				"conta",
-				"container"
+				"contato",
+				"contato_extenso"
 			],
 			[
 				"cont",
+				"contato"
+			],
+			[
+				"ti",
+				"tipo"
+			],
+			[
+				"co",
+				"contato"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"conta",
 				"container"
 			],
 			[
@@ -30,10 +46,6 @@
 			[
 				"q",
 				"qtde_contato"
-			],
-			[
-				"co",
-				"console"
 			],
 			[
 				"te",
@@ -284,10 +296,6 @@
 				"metadataFields"
 			],
 			[
-				"print",
-				"print_r"
-			],
-			[
 				"pri",
 				"print_r"
 			],
@@ -352,15 +360,6 @@
 	"buffers":
 	[
 		{
-			"file": "/C/xampp/htdocs/dev/lvm_people_form.php",
-			"settings":
-			{
-				"buffer_size": 6661,
-				"line_ending": "Windows",
-				"name": "lvm_people_form.php"
-			}
-		},
-		{
 			"file": "lvm_people_admin_settings.php",
 			"settings":
 			{
@@ -369,19 +368,19 @@
 			}
 		},
 		{
-			"file": "inc/metaboxes/people/contatos-save.php",
+			"file": "inc/metaboxes/people/contatos.php",
 			"settings":
 			{
-				"buffer_size": 312,
+				"buffer_size": 6891,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Thiago/Desktop/coursera/Python/a3/a3.py",
+			"file": "inc/metaboxes/people/contatos-save.php",
 			"settings":
 			{
-				"buffer_size": 3684,
-				"line_ending": "Unix"
+				"buffer_size": 1959,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -407,33 +406,25 @@
 				"buffer_size": 4984,
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "inc/metaboxes/people/contatos.php",
-			"settings":
-			{
-				"buffer_size": 3552,
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 173.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
-				"lvm",
-				"Snippet: LVM: save metadata"
+				"pac",
+				"Package Control: Install Package"
 			],
 			[
 				"pa",
-				"Package Control: List Packages"
+				"Package Control: Install Package"
 			],
 			[
-				"pac",
-				"Package Control: Remove Package"
+				"lvm",
+				"Snippet: LVM: save metadata"
 			],
 			[
 				"pack",
@@ -756,7 +747,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 528.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -773,6 +764,8 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/dev/lvm_people_form.php",
+		"/C/Users/Thiago/Desktop/coursera/Python/a3/a3.py",
 		"/C/Users/Thiago/Downloads/Visual Complexity - Mapping Patterns of Information PDF.pdf",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/people/contatos-tmp.html",
 		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e02.ssa",
@@ -819,7 +812,6 @@
 		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/.gitignore",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/lvm_people_admin_settings.php",
-		"/C/xampp/htdocs/dev/lvm_people_form.php",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/lvm_admin_fields.php",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/lvm_cpt.sublime-project",
 		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/LiveReload.sublime-settings",
@@ -899,8 +891,7 @@
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/fields/lvm_boolean_field.php",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/lvm_admin_fields.php",
 		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/1a turma/names.xml",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/1a turma/names3.xml",
-		"/C/xampp/htdocs/dev/hash.php"
+		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/1a turma/names3.xml"
 	],
 	"find":
 	{
@@ -918,6 +909,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"[\"boolean\"]",
+			"\"tipo\"",
+			"'_lvm_people_'. $contato . '_n'",
+			"tipo",
+			"tipo_",
 			"obj.hasClass",
 			"getContato(obj)",
 			"cit",
@@ -1040,12 +1036,7 @@
 			" ",
 			"",
 			"§",
-			"ˆ",
-			"‡",
-			"Itu",
-			"cursando",
-			"Micheletti",
-			"44"
+			"ˆ"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1072,165 +1063,11 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/xampp/htdocs/dev/lvm_people_form.php",
-					"settings":
-					{
-						"buffer_size": 6661,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1308,
-								1308
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gist":
-							{
-								"comments": 0,
-								"created_at": "2012-10-13T19:37:12Z",
-								"description": "LVM: lvm_people_form php",
-								"files":
-								{
-									"lvm_people_form.php":
-									{
-										"filename": "lvm_people_form.php",
-										"language": "PHP",
-										"raw_url": "https://gist.github.com/raw/3885863/3a8f1a6c0f24f60c6ee81d23cad33b21b902c8b3/lvm_people_form.php",
-										"size": 6649,
-										"type": "application/httpd-php"
-									}
-								},
-								"git_pull_url": "git://gist.github.com/3885863.git",
-								"git_push_url": "git@gist.github.com:3885863.git",
-								"html_url": "https://gist.github.com/3885863",
-								"id": "3885863",
-								"public": true,
-								"updated_at": "2012-10-13T19:37:12Z",
-								"url": "https://api.github.com/gists/3885863",
-								"user":
-								{
-									"_links":
-									{
-										"self":
-										{
-											"href": "https://api.github.com/users/thiagoaslima"
-										}
-									},
-									"avatar_url": "https://secure.gravatar.com/avatar/94cf6ba990e4723c9de38e8bd8d53f22?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
-									"gravatar_id": "94cf6ba990e4723c9de38e8bd8d53f22",
-									"id": 2490527,
-									"login": "thiagoaslima",
-									"url": "https://api.github.com/users/thiagoaslima"
-								}
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 67.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "lvm_people_admin_settings.php",
 					"settings":
 					{
@@ -1241,8 +1078,8 @@
 						"selection":
 						[
 							[
-								1809,
-								1809
+								8190,
+								8190
 							]
 						],
 						"settings":
@@ -1340,7 +1177,123 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3649.0,
+						"translation.y": 2434.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "inc/metaboxes/people/contatos.php",
+					"settings":
+					{
+						"buffer_size": 6891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3451,
+								3451
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 585.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1350,15 +1303,15 @@
 					"file": "inc/metaboxes/people/contatos-save.php",
 					"settings":
 					{
-						"buffer_size": 312,
+						"buffer_size": 1959,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								312,
-								312
+								1696,
+								1696
 							]
 						],
 						"settings":
@@ -1451,121 +1404,7 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Thiago/Desktop/coursera/Python/a3/a3.py",
-					"settings":
-					{
-						"buffer_size": 3684,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								594,
-								594
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Python/Python.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1576,7 +1415,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "js/lvm_people_form.js",
 					"settings":
 					{
@@ -1692,7 +1531,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "inc/metaboxes/people/dados-pessoais.php",
 					"settings":
 					{
@@ -1797,18 +1636,18 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 186.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "css/lvm_people_styles.css",
 					"settings":
 					{
@@ -1918,122 +1757,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 1920.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "inc/metaboxes/people/contatos.php",
-					"settings":
-					{
-						"buffer_size": 3552,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								82,
-								64
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

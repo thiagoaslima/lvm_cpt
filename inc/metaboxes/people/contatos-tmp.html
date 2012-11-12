@@ -1,7 +1,14 @@
+<!-- 
+$fields            = [];
+$fields["tipo"]    = "lvm_people_tipo_" . $contato . "_" . $i;
+$fields["contato"] = "lvm_people_" . $contato . "_" . $i;
+$fields["visivel"] = "lvm_people_boolean_" . $contato . "_" . $i;
+ -->
+
 <script id="email-tmp" type="contatos/templates">
     <div class="email_{{n}} line">
         <div class="label mini dropdown">
-            <span contenteditable="true" class="termo" id="tipo_email_{{n}}">Email</span>
+            <span contenteditable="true" class="termo" id="lvm_people_tipo_email_{{n}}">Email</span>
             <div class="lvm_options">
                 <span class="contatos arrow-down"></span>
                 <span>Residencial</span>
@@ -9,10 +16,10 @@
                 <span>Personalizar</span>
             </div>
         </div>
-        <input type="hidden" name="tipo_email_{{n}}" value="Email">
+        <input type="hidden" name="lvm_people_tipo_email_{{n}}" value="Email">
         <input type="text" class="large" name="lvm_people_email_{{n}}" placeholder="example@ufrj.br">
         <span class="mini">
-            <input type="checkbox" name="lvm_people_email_boolean_{{n}}" value="true"> Público
+            <input type="checkbox" name="lvm_people_boolean_email{{n}}" value="true"> Público
         </span>
         <span class="mini">
             <span class="lixeira">Apagar</span>
@@ -23,7 +30,7 @@
 <script id="tel-tmp" type="contatos/templates">
     <div class="tel_{{n}} line">
         <div class="label mini dropdown">
-            <span contenteditable="true" class="termo" id="tipo_tel_{{n}}">Telefone</span>
+            <span contenteditable="true" class="termo" id="lvm_people_tipo_tel_{{n}}">Telefone</span>
             <div class="lvm_options">
                 <span class="contatos arrow-down"></span>
                 <span>Celular</span>
@@ -35,10 +42,10 @@
                 <span>Personalizar</span>
             </div>
         </div>
-        <input type="hidden" name="tipo_tel_{{n}}" value="Telefone">
+        <input type="hidden" name="lvm_people_tipo_tel_{{n}}" value="Telefone">
         <input type="text" class="large" name="lvm_people_tel_{{n}}" placeholder="example@ufrj.br">
         <span class="mini">
-            <input type="checkbox" name="lvm_people_tel_boolean_{{n}}" value="true"> Público
+            <input type="checkbox" name="lvm_people_boolean_tel{{n}}" value="true"> Público
         </span>
         <span class="mini">
             <span class="lixeira">Apagar</span>
@@ -49,7 +56,7 @@
 <script id="end-tmp" type="contatos/templates">
     <div class="end_{{n}} line">
         <div class="label mini dropdown">
-            <span contenteditable="true" class="termo" id="tipo_end_{{n}}">Endereço</span>
+            <span contenteditable="true" class="termo" id="lvm_people_tipo_end_{{n}}">Endereço</span>
             <div class="lvm_options">
                 <span class="contatos arrow-down"></span>
                 <span>Residencial</span>
@@ -57,10 +64,10 @@
                 <span>Personalizar</span>
             </div>
         </div>
-        <input type="hidden" name="tipo_end_{{n}}" value="Endereço">
+        <input type="hidden" name="lvm_people_tipo_end_{{n}}" value="Endereço">
         <input type="text" class="large" name="lvm_people_end_{{n}}" placeholder="example@ufrj.br">
         <span class="mini">
-            <input type="checkbox" name="lvm_people_end_boolean_{{n}}" value="true"> Público
+            <input type="checkbox" name="lvm_people_boolean_end{{n}}" value="true"> Público
         </span>
         <span class="mini">
             <span class="lixeira">Apagar</span>
