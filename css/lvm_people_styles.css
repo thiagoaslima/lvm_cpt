@@ -250,3 +250,12 @@ span.lixeira{
 span.lixeira:hover{
 	background:transparent url(i/trash.png) no-repeat center -19px;
 }
+
+.textarea{
+	vertical-align: top;
+	-webkit-transition: height 0.4s;
+	-moz-transition: height 0.4s;
+	-o-transition: height 0.4s;
+	-ms-transition: height 0.4s;
+	transition: height 0.4s;
+}

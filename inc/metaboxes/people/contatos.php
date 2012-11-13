@@ -2,7 +2,7 @@
 
     $formas_contato   = ["email", "tel", "end"];
     $contato_extenso  = ["Email", "Telefone", "Endereço"];
-    $placeholder_array = ["example@ufrj.br", "+55 21 9876 5432", ""]
+    $placeholder_array = ["example@ufrj.br", "+55 21 9876 5432", "Av. Pedro Calmon, n° 550, Prédio da Reitoria, 2° andar, Cidade Universitária, Rio de Janeiro, RJ"];
 
     $options = [];
     $options["email"] = ["Residencial", "Comercial", "Personalizar"];
@@ -14,6 +14,7 @@
 
         // grava a forma por extendo do contato atual
         $cont_extenso   = array_shift($contato_extenso);
+        $placeholder = array_shift($placeholder_array);
 
         // recupera o numero de contatos do tipo em questão já gravado na base de dados
         $marcador_qtde  = '_lvm_people_'. $contato . '_n';
@@ -60,7 +61,18 @@
                 </div>
             
                 <input type="hidden" name="<?php echo $fields["tipo"]; ?>" value="<?php echo $metadata["tipo"]; ?>">
-                <input type="text" class="large" name="<?php echo $fields["contato"]; ?>" <?php if($metadata["contato"] != "") { echo 'value="' . $metadata["contato"] . '"'; } ?> placeholder="example@ufrj.br">
+
+                <?php 
+                if( $contato != "end" ) {
+                ?>
+                    <input type="text" class="large" name="<?php echo $fields["contato"]; ?>" <?php if($metadata["contato"] != "") { echo 'value="' . $metadata["contato"] . '"'; } ?> placeholder="<?php echo $placeholder; ?>">
+                <?php
+                }else{
+                ?>
+                    <textarea class="textarea large" name="<?php echo $fields["contato"]; ?>" placeholder="<?php echo $placeholder; ?>"><?php //if($metadata["contato"] != "") { echo 'value="' . $metadata["contato"] . '"'; } ?></textarea>
+                <?php
+                }
+                ?>
 
                 <span class="mini">
                     <input type="checkbox" name="<?php echo $fields["visivel"]; ?>" if($metadata["visivel"]){ echo "checked"; } value="<?php echo $metadata["visivel"]; ?>"> Público

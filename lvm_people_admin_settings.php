@@ -43,6 +43,7 @@ add_action('init', 'register_my_script');
 add_action('admin_footer', 'print_my_script');
  
 function register_my_script() {
+    wp_register_script('autosize', plugins_url('js/autosize/jquery.autosize-min.js', __FILE__), array('jquery'), '1.0', true);
     wp_register_script('lvm_people_form', plugins_url('js/lvm_people_form.js', __FILE__), array('jquery'), '1.0', true);
 }
  
@@ -51,6 +52,7 @@ function print_my_script() {
  
     if( $post && $post->post_type != "lvm_people" ) return;
  
+    wp_print_scripts('autosize');
     wp_print_scripts('lvm_people_form');
 }
 

@@ -2,6 +2,20 @@
 
     "use strict";
 
+    var LVM_PEOPLE = {};
+
+    LVM_PEOPLE.helpers = {
+
+        getTemplates = function(file) {
+            var host = location.protocol + location.host,
+                url = host + "/wp-content/plugins/lvm_cpt_plugin/" + file;
+
+             return function(idTemplate) {
+                $.load( url + " " + idTemplate, runTemplate( obj ) )
+             }
+        }
+
+    };
     /*
      * amplia a biblioteca jQuery 
      * adiciona a função de selecionar determinado texto 
@@ -104,6 +118,45 @@
             $citacao.val(citacao);
         });
 
+
+    // ações da parte dos Contatos
+    LVM_PEOPLE.contatos ={
+        var $divContatos = $("#cpt_lvm_people_contatos"),
+            thisObj = this;
+
+        init = (function (){
+            // redimensionamento automático da textarea
+            // depende do plugin autosize
+            $('.textarea').autosize({append: "\n"});
+
+            // addListener nos links que acrescentam campos
+            $divContatos.on("click", "a", thisObj.addCampo(event));
+        }()),
+
+        // adiciona campo
+        addCampo = function(event){
+            var $this = $(this),
+                $obj = $this.parent("lvm_separador"),
+                contato;
+
+            event.preventDefault();
+
+            if ($obj.hasClass("tel")) {
+                contato = "tel";
+            } else if ($obj.hasClass("email")) {
+                contato = "email";
+            } else if ($obj.hasClass("end")) {
+                contato = "end";
+            }
+
+        }
+
+    }
+
+
+/*    // redimensiona o campo textarea
+    // // depende do plugin autosize
+    $('.textarea').autosize({append: "\n"});
 
     // controla a escolha da opção de tipo de contato
     $("#cpt_lvm_people_contatos")
@@ -236,7 +289,7 @@
     (function () {
         $(".lixeira").css("visibility", "hidden");
     }());
-
+*/
 
 }(jQuery, window, document));
 
