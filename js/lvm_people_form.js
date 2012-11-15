@@ -1,21 +1,61 @@
+var LVM = {};
+
+LVM.helpers = (function ($) {
+    'use strict';
+
+    var that = this,
+        data,
+        obj;
+
+    return {
+        templates: {
+
+            getTemplate: function (LVMspace) {
+                return $.ajax({
+                    url: LVM[LVMspace].config.url,
+                    dataType: "html"
+                })
+            },
+
+            runTemplate: function (data, tmplID, obj) {
+                var $tmpl = $("<div/>").append(data).find(tmplID).html(),
+                    prop,
+                    regexp;
+
+                for (prop in obj) {
+                    if (obj.hasOwnProperty(prop)) {
+                        regexp = new RegExp("{{" + prop + "}}", "g");
+                        $tmpl = $tmpl.replace(regexp, obj[prop]);
+                    }
+                }
+
+                return $tmpl;
+            },
+
+            addToDOM: function (LVMspace, $dom, idTemplate, obj) {
+                var that = this,
+                    tmplID = "#" + idTemplate + "-tmp",
+                    novoCampo;
+
+                $.when(
+                    that.getTemplate(LVMspace)
+                ).done(function (data) {
+                    novoCampo = that.runTemplate(data, tmplID, obj);
+                    $dom.append(novoCampo);
+                });
+            }
+        }
+    };
+}(jQuery));
+
 (function ($, window, document) {
 
     "use strict";
 
-    var LVM_PEOPLE = {};
+    var LVM = window.LVM;
+    LVM.people = LVM.people || {};
 
-    LVM_PEOPLE.helpers = {
 
-        getTemplates = function(file) {
-            var host = location.protocol + location.host,
-                url = host + "/wp-content/plugins/lvm_cpt_plugin/" + file;
-
-             return function(idTemplate) {
-                $.load( url + " " + idTemplate, runTemplate( obj ) )
-             }
-        }
-
-    };
     /*
      * amplia a biblioteca jQuery 
      * adiciona a função de selecionar determinado texto 
@@ -39,6 +79,19 @@
             selection.addRange(range);
         }
     };
+
+
+    // configura as funções básicas utilizadas nos métodos da interface
+    LVM.people.config = {
+        url: (function () {
+            var url = "/wp-content/plugins/lvm_cpt_plugin/" +
+                            "tmp/people.html";
+            return url;
+        }()),
+
+        div: $("#cpt_lvm_people_contatos")
+    };
+
 
     // preenche automaticamente os campos title (hidden) e Citação
     // a partir dos dados inseridos nos campos Nome e Sobrenome
@@ -120,23 +173,30 @@
 
 
     // ações da parte dos Contatos
-    LVM_PEOPLE.contatos ={
-        var $divContatos = $("#cpt_lvm_people_contatos"),
-            thisObj = this;
+    LVM.people.contatos = {
 
-        init = (function (){
+        init: function () {
+            var $divContatos = LVM.people.config.div;
+
             // redimensionamento automático da textarea
             // depende do plugin autosize
             $('.textarea').autosize({append: "\n"});
 
             // addListener nos links que acrescentam campos
-            $divContatos.on("click", "a", thisObj.addCampo(event));
-        }()),
+
+            // liga os botoes de adicionar novos links
+            $divContatos.on("click", ".add", function () {
+                LVM.people.contatos.addCampo(event);
+            });
+        },
+
 
         // adiciona campo
-        addCampo = function(event){
-            var $this = $(this),
-                $obj = $this.parent("lvm_separador"),
+        addCampo: function (event) {
+            var $this = $(event.target),
+                $obj = $this.parents(".lvm_separador"),
+                $lines = $obj.find(".lines"),
+                qtde = $obj.find(".line").length,
                 contato;
 
             event.preventDefault();
@@ -149,9 +209,16 @@
                 contato = "end";
             }
 
+            LVM.helpers.templates.addToDOM(
+                "people",
+                $lines,
+                contato,
+                {number: qtde}
+            );
         }
 
-    }
+    };
+    LVM.people.contatos.init();
 
 
 /*    // redimensiona o campo textarea

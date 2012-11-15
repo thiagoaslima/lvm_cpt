@@ -45,48 +45,47 @@
 
             <div class="lvm_separador <?php echo $contato; if(count($contato_extenso) == 0){ echo " sep_last"; } ?>">
 
-                <input type="hidden" id="<?php echo $marcador_qtde; ?>" name="<?php echo $marcador_qtde; ?>" value="<?php echo $qtde_gravada; ?>">
+                <div class="lines">
+                    <div class="<?php echo $contato . '_' . $i; ?>  line">
+                        <div class="label mini dropdown">
+                            <span contenteditable="true" class="termo" id="<?php echo $fields["tipo"]; ?>"><?php echo $metadata["tipo"]; ?></span>
+                            <div class="lvm_options">
+                                <span class="contatos arrow-down"></span>
+                                <?php
+                                    for( $j=0, $len = count($options[$contato]); $j < $len; $j++ ){
+                                        printf('<span>%s</span>', $options[$contato][$j]);
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                
+                        <input type="hidden" name="<?php echo $fields["tipo"]; ?>" value="<?php echo $metadata["tipo"]; ?>">
 
-                <div class="<?php echo $contato . '_' . $i; ?>  line">
-                    <div class="label mini dropdown">
-                    <span contenteditable="true" class="termo" id="<?php echo $fields["tipo"]; ?>"><?php echo $metadata["tipo"]; ?></span>
-                    <div class="lvm_options">
-                        <span class="contatos arrow-down"></span>
-                        <?php
-                            for( $j=0, $len = count($options[$contato]); $j < $len; $j++ ){
-                                printf('<span>%s</span>', $options[$contato][$j]);
-                            }
+                        <?php 
+                        if( $contato != "end" ) {
                         ?>
+                            <input type="text" class="large" name="<?php echo $fields["contato"]; ?>" <?php if($metadata["contato"] != "") { echo 'value="' . $metadata["contato"] . '"'; } ?> placeholder="<?php echo $placeholder; ?>">
+                        <?php
+                        }else{
+                        ?>
+                            <textarea class="textarea large" name="<?php echo $fields["contato"]; ?>" placeholder="<?php echo $placeholder; ?>"><?php if($metadata["contato"] != "") { echo 'value="' . $metadata["contato"] . '"'; } ?></textarea>
+                        <?php
+                        };
+                        ?>
+
+                        <span class="mini">
+                            <input type="checkbox" name="<?php echo $fields["visivel"]; ?>" if($metadata["visivel"]){ echo "checked"; } value="<?php echo $metadata["visivel"]; ?>"> Público
+                        </span>
+                        <span class="mini">
+                            <span class="lixeira">Apagar</span>
+                        </span>
                     </div>
                 </div>
-            
-                <input type="hidden" name="<?php echo $fields["tipo"]; ?>" value="<?php echo $metadata["tipo"]; ?>">
 
-                <?php 
-                if( $contato != "end" ) {
-                ?>
-                    <input type="text" class="large" name="<?php echo $fields["contato"]; ?>" <?php if($metadata["contato"] != "") { echo 'value="' . $metadata["contato"] . '"'; } ?> placeholder="<?php echo $placeholder; ?>">
-                <?php
-                }else{
-                ?>
-                    <textarea class="textarea large" name="<?php echo $fields["contato"]; ?>" placeholder="<?php echo $placeholder; ?>"><?php //if($metadata["contato"] != "") { echo 'value="' . $metadata["contato"] . '"'; } ?></textarea>
-                <?php
-                }
-                ?>
-
-                <span class="mini">
-                    <input type="checkbox" name="<?php echo $fields["visivel"]; ?>" if($metadata["visivel"]){ echo "checked"; } value="<?php echo $metadata["visivel"]; ?>"> Público
-                </span>
-                <span class="mini">
-                    <span class="lixeira">Apagar</span>
-                </span>
+                <a href=# class="add shift-mini">+ Adicionar outro <?php echo strtolower($cont_extenso); ?></a>
             </div>
-            <a href=# class="add shift-mini">+ Adicionar outro <?php echo strtolower($cont_extenso); ?></a>
-
-        </div>
 
             <?php
-
             $i++;
         } while ($i < $qtde_gravada);
     }

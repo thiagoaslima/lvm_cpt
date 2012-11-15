@@ -5,10 +5,10 @@ $fields["contato"] = "lvm_people_" . $contato . "_" . $i;
 $fields["visivel"] = "lvm_people_boolean_" . $contato . "_" . $i;
 -->
 
-<script id="email-tmp" type="contatos/templates">
-    <div class="email_{{n}} line">
+<div id="email-tmp" type="contatos/templates">
+    <div class="email_{{number}} line">
         <div class="label mini dropdown">
-            <span contenteditable="true" class="termo" id="lvm_people_tipo_email_{{n}}">Email</span>
+            <span contenteditable="true" class="termo" id="lvm_people_tipo_email_{{number}}">Email</span>
             <div class="lvm_options">
                 <span class="contatos arrow-down"></span>
                 <span>Residencial</span>
@@ -16,21 +16,21 @@ $fields["visivel"] = "lvm_people_boolean_" . $contato . "_" . $i;
                 <span>Personalizar</span>
             </div>
         </div>
-        <input type="hidden" name="lvm_people_tipo_email_{{n}}" value="Email">
-        <input type="text" class="large" name="lvm_people_email_{{n}}" placeholder="example@ufrj.br">
+        <input type="hidden" name="lvm_people_tipo_email_{{number}}" value="Email">
+        <input type="text" class="large" name="lvm_people_email_{{number}}" placeholder="example@ufrj.br">
         <span class="mini">
-            <input type="checkbox" name="lvm_people_boolean_email{{n}}" value="true"> Público
+            <input type="checkbox" name="lvm_people_boolean_email{{number}}" value="true"> Público
         </span>
         <span class="mini">
             <span class="lixeira">Apagar</span>
         </span>
     </div>
-</script>
+</div>
 
 <script id="tel-tmp" type="contatos/templates">
-    <div class="tel_{{n}} line">
+    <div class="tel_{{number}} line">
         <div class="label mini dropdown">
-            <span contenteditable="true" class="termo" id="lvm_people_tipo_tel_{{n}}">Telefone</span>
+            <span contenteditable="true" class="termo" id="lvm_people_tipo_tel_{{number}}">Telefone</span>
             <div class="lvm_options">
                 <span class="contatos arrow-down"></span>
                 <span>Celular</span>
@@ -42,10 +42,10 @@ $fields["visivel"] = "lvm_people_boolean_" . $contato . "_" . $i;
                 <span>Personalizar</span>
             </div>
         </div>
-        <input type="hidden" name="lvm_people_tipo_tel_{{n}}" value="Telefone">
-        <input type="text" class="large" name="lvm_people_tel_{{n}}" placeholder="+55 21 9876 5432">
+        <input type="hidden" name="lvm_people_tipo_tel_{{number}}" value="Telefone">
+        <input type="text" class="large" name="lvm_people_tel_{{number}}" placeholder="+55 21 9876 5432">
         <span class="mini">
-            <input type="checkbox" name="lvm_people_boolean_tel{{n}}" value="true"> Público
+            <input type="checkbox" name="lvm_people_boolean_tel{{number}}" value="true"> Público
         </span>
         <span class="mini">
             <span class="lixeira">Apagar</span>
@@ -54,9 +54,9 @@ $fields["visivel"] = "lvm_people_boolean_" . $contato . "_" . $i;
 </script>
 
 <script id="end-tmp" type="contatos/templates">
-    <div class="end_{{n}} line">
+    <div class="end_{{number}} line">
         <div class="label mini dropdown">
-            <span contenteditable="true" class="termo" id="lvm_people_tipo_end_{{n}}">Endereço</span>
+            <span contenteditable="true" class="termo" id="lvm_people_tipo_end_{{number}}">Endereço</span>
             <div class="lvm_options">
                 <span class="contatos arrow-down"></span>
                 <span>Residencial</span>
@@ -64,10 +64,10 @@ $fields["visivel"] = "lvm_people_boolean_" . $contato . "_" . $i;
                 <span>Personalizar</span>
             </div>
         </div>
-        <input type="hidden" name="lvm_people_tipo_end_{{n}}" value="Endereço">
-        <textarea class="textarea large" name="lvm_people_end_{{n}}" placeholder="Av. Pedro Calmon, n° 550, Prédio da Reitoria, 2° andar, Cidade Universitária, Rio de Janeiro, RJ"></textarea>
+        <input type="hidden" name="lvm_people_tipo_end_{{number}}" value="Endereço">
+        <textarea class="textarea large" name="lvm_people_end_{{number}}" placeholder="Av. Pedro Calmon, n° 550, Prédio da Reitoria, 2° andar, Cidade Universitária, Rio de Janeiro, RJ"></textarea>
         <span class="mini">
-            <input type="checkbox" name="lvm_people_boolean_end{{n}}" value="true"> Público
+            <input type="checkbox" name="lvm_people_boolean_end{{number}}" value="true"> Público
         </span>
         <span class="mini">
             <span class="lixeira">Apagar</span>

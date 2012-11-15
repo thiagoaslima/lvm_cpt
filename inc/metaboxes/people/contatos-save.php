@@ -9,56 +9,41 @@
                             ? (int)( get_post_meta( $post_id, '_lvm_people_'. $contato . '_n', true )
                             : 0;
 
-        // registra a nova quantidade
-        $qtde_nova = isset( $_POST['lvm_people_' . $contato . '_n'] ) 
-                            ? $_POST['lvm_people_' . $contato . '_n']
-                            : 0
+        // marcador para o loop
+        $i = 0;
+        $verificador = 'lvm_people_' . $contato . '_';
 
-        // atualiza a quantidade de contatos gravados
-        update_post_meta( $post_id, '_lvm_people_' . $contato . '_n', $qtde_nova );
+        // testa a existência de dados passados e grava-os no servidor sequencialmente
+        while( isset($_POST[$verificador . $i]) ){
 
+            $tipo_field    = 'lvm_people_tipo_'. $contato . '_' . $i;
+            $contato_field = $verificador . $i;
+            $boolean_field = 'lvm_people_boolean_' . $contato . '_' . $i;
+            $bool          = (isset($_POST[$boolean_field]));
 
-        // atualiza os dados passados
-        for( $i = 0; $i < $qtde_nova; $i++ ){
+            update_post_meta( $post_id, $tipo_field, $_POST[$tipo_field] );
+            update_post_meta( $post_id, $contato_field, $_POST[$contato_field] );
+            update_post_meta( $post_id, $boolean_field, $bool );
 
-            $tipo_field = 'lvm_people_tipo_'. $contato . '_' . $i;
+            $i++;
+        }
+
+        // grava na base de dados a quantidade atualizada de campos 
+        update_post_meta( $post_id, '_lvm_people_'. $contato . '_n', $i );
+
+        // caso tenhamos menos dados do que antes,
+        // ou seja, o usuário deletou algum contato previamente gravado,
+        // fazemos o loop para deletar as entradas adicionais
+        for( $i; $qtde_nova < $qtde_gravada; $i++ ){
+
+            $tipo_field    = 'lvm_people_tipo_'. $contato . '_' . $i;
             $contato_field = 'lvm_people_' . $contato . '_' . $i;
             $boolean_field = 'lvm_people_boolean_' . $contato . '_' . $i;
-            $bool = (isset($_POST[$boolean_field]));
 
-            if ( isset($_POST[$tipo_field]) && isset($_POST[$contato_field]) &&
-                 $_POST[$tipo_field] != "" && $_POST[$contato_field] != "" ) {
-                
-                update_post_meta( $post_id, $tipo_field, $_POST[$tipo_field] );
-                update_post_meta( $post_id, $contato_field, $_POST[$contato_field] );
-                update_post_meta( $post_id, $boolean_field, $bool );
-
-            } else {
-                
-                delete_post_meta($post_id, $tipo_field );
-                delete_post_meta($post_id, $contato_field );
-                delete_post_meta($post_id, $boolean_field );
-
-            }
-        
+            delete_post_meta($post_id, $tipo_field );
+            delete_post_meta($post_id, $contato_field );
+            delete_post_meta($post_id, $boolean_field );
         }
-
-        if( $qtde_nova < $qtde_gravada ){
-
-            for( $qtde_nova; $qtde_nova < $qtde_gravada; $qtde_nova++ ){
-
-                $tipo_field = 'lvm_people_tipo_'. $contato . '_' . $i;
-                $contato_field = 'lvm_people_' . $contato . '_' . $i;
-                $boolean_field = 'lvm_people_boolean_' . $contato . '_' . $i;
-
-                delete_post_meta($post_id, $tipo_field );
-                delete_post_meta($post_id, $contato_field );
-                delete_post_meta($post_id, $boolean_field );
-            }
-
-        }
-
     }
-    
     
 ?>
