@@ -12,7 +12,7 @@
 
     foreach ($formas_contato as $contato) {
 
-        // grava a forma por extendo do contato atual
+        // grava a forma por extenso do contato atual
         $cont_extenso   = array_shift($contato_extenso);
         $placeholder = array_shift($placeholder_array);
 
@@ -25,15 +25,22 @@
 
 
         // constrói os campos de formulário
+        // as divs externas ao loop, pois não são repetidas em um mesmo contato
+        // ou seja, eles contem todas as linhas de cada contato
+        ?>
+        <div class="lvm_separador <?php echo $contato; if(count($contato_extenso) == 0){ echo " sep_last"; } ?>">
+            <div class="lines">
+
+        <?php
         do{
             // nome dos campos do formulário e dos campos de metadados
-            $fields            = [];
+            $fields = [];
             $fields["tipo"]    = "lvm_people_tipo_" . $contato . "_" . $i;
             $fields["contato"] = "lvm_people_" . $contato . "_" . $i;
             $fields["visivel"] = "lvm_people_boolean_" . $contato . "_" . $i;
 
             // valor dos metadados
-            $metadata            = [];
+            $metadata = [];
             $metadata["tipo"]    = ( get_post_meta( $post_id, $fields["tipo"], true) != "" )
                                         ? get_post_meta( $post_id, $fields["tipo"], true)
                                         : $cont_extenso;
@@ -43,51 +50,53 @@
             //html do formulário
             ?>
 
-            <div class="lvm_separador <?php echo $contato; if(count($contato_extenso) == 0){ echo " sep_last"; } ?>">
-
-                <div class="lines">
-                    <div class="<?php echo $contato . '_' . $i; ?>  line">
-                        <div class="label mini dropdown">
-                            <span contenteditable="true" class="termo" id="<?php echo $fields["tipo"]; ?>"><?php echo $metadata["tipo"]; ?></span>
-                            <div class="lvm_options">
-                                <span class="contatos arrow-down"></span>
-                                <?php
-                                    for( $j=0, $len = count($options[$contato]); $j < $len; $j++ ){
-                                        printf('<span>%s</span>', $options[$contato][$j]);
-                                    }
-                                ?>
-                            </div>
-                        </div>
-                
-                        <input type="hidden" name="<?php echo $fields["tipo"]; ?>" value="<?php echo $metadata["tipo"]; ?>">
-
-                        <?php 
-                        if( $contato != "end" ) {
-                        ?>
-                            <input type="text" class="large" name="<?php echo $fields["contato"]; ?>" <?php if($metadata["contato"] != "") { echo 'value="' . $metadata["contato"] . '"'; } ?> placeholder="<?php echo $placeholder; ?>">
+           
+            <div class="<?php echo $contato . '_' . $i; ?>  line">
+                <div class="label mini dropdown">
+                    <span contenteditable="true" class="termo" id="<?php echo $fields["tipo"]; ?>"><?php echo $metadata["tipo"]; ?></span>
+                    <div class="lvm_options">
+                        <span class="contatos arrow-down"></span>
                         <?php
-                        }else{
+                            for( $j=0, $len = count($options[$contato]); $j < $len; $j++ ){
+                                printf('<span>%s</span>', $options[$contato][$j]);
+                            }
                         ?>
-                            <textarea class="textarea large" name="<?php echo $fields["contato"]; ?>" placeholder="<?php echo $placeholder; ?>"><?php if($metadata["contato"] != "") { echo 'value="' . $metadata["contato"] . '"'; } ?></textarea>
-                        <?php
-                        };
-                        ?>
-
-                        <span class="mini">
-                            <input type="checkbox" name="<?php echo $fields["visivel"]; ?>" if($metadata["visivel"]){ echo "checked"; } value="<?php echo $metadata["visivel"]; ?>"> Público
-                        </span>
-                        <span class="mini">
-                            <span class="lixeira">Apagar</span>
-                        </span>
                     </div>
                 </div>
+        
+                <input type="hidden" name="<?php echo $fields["tipo"]; ?>" value="<?php echo $metadata["tipo"]; ?>">
 
-                <a href=# class="add shift-mini">+ Adicionar outro <?php echo strtolower($cont_extenso); ?></a>
-            </div>
+                <?php 
+                if( $contato != "end" ) {
+                ?>
+                    <input type="text" class="large" name="<?php echo $fields["contato"]; ?>" <?php if($metadata["contato"] != "") { echo 'value="' . $metadata["contato"] . '"'; } ?> placeholder="<?php echo $placeholder; ?>">
+                <?php
+                }else{
+                ?>
+                    <textarea class="textarea large" name="<?php echo $fields["contato"]; ?>" placeholder="<?php echo $placeholder; ?>"><?php if($metadata["contato"] != "") { echo $metadata["contato"]; } ?></textarea>
+                <?php
+                };
+                ?>
+
+                <span class="mini">
+                    <input type="checkbox" name="<?php echo $fields["visivel"]; ?>" <?php if( !!$metadata["visivel"]){ echo "checked"; } ?> value="<?php echo $metadata["visivel"]; ?>"> Público
+                </span>
+                <span class="mini">
+                    <span class="lixeira">Apagar</span>
+                </span>
+                    </div>
+                
 
             <?php
             $i++;
         } while ($i < $qtde_gravada);
+
+        ?>
+            </div>
+            <a href=# class="add shift-mini">+ Adicionar outro <?php echo strtolower($cont_extenso); ?></a>
+        </div>
+        <?php
+        
     }
 
 /*

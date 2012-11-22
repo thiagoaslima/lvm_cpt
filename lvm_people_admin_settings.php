@@ -39,15 +39,15 @@ License:     GPL2
 
 // Controls the javascript load
 // http://scribu.net/wordpress/optimal-script-loading.html
-add_action('init', 'register_my_script');
-add_action('admin_footer', 'print_my_script');
+add_action('init', 'LVM_people_scripts');
+add_action('admin_footer', 'LVM_people_print_scripts');
  
-function register_my_script() {
+function LVM_people_scripts() {
     wp_register_script('autosize', plugins_url('js/autosize/jquery.autosize-min.js', __FILE__), array('jquery'), '1.0', true);
     wp_register_script('lvm_people_form', plugins_url('js/lvm_people_form.js', __FILE__), array('jquery'), '1.0', true);
 }
  
-function print_my_script() {
+function LVM_people_print_scripts() {
     global $post;
  
     if( $post && $post->post_type != "lvm_people" ) return;
@@ -67,7 +67,6 @@ function cpt_lvm_people_default_options() {
      * UPDATE THE VERSION WHEN IMPROVEMENTS ARE MADE
      * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
      */
-
     $version = 0.1;
 
     if ( get_option( 'cpt_lvm_people_version' ) === false ) {
@@ -148,7 +147,7 @@ add_action( 'admin_init', 'cpt_lvm_people_admin_interface_init' );
 // Function to register new Dados Pessoais meta box for book review post editor
 function cpt_lvm_people_admin_interface_init() {
 
-    if ( is_admin() ){
+    if ( is_admin() && $_GET["post_type"] == "lvm_people" ){
 
         wp_enqueue_style( 'lvm_cpt', plugins_url( 'css/lvm_people_styles.css', __FILE__ ) );
         add_action('admin_footer', "add_templates" );
@@ -267,12 +266,7 @@ function cpt_lvm_people_save_data( $post_id = false, $post = false ) {
      * /////////////////////////////////////////////////////////////////
      */
     
-    if ( isset( $_POST['nome do campo'] ) ) {
-        update_post_meta( $post_id, '_nome do campo', $_POST['nome do campo'] );
-    } elseif ( get_post_meta( $post_id, '_nome do campo', true) ) {
-        update_post_meta( $post_id, '_nome do campo', '' );
-    }
-    
+    require ("inc/metaboxes/people/contatos-save.php");
     }
 }
 

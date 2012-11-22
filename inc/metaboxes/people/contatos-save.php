@@ -6,8 +6,7 @@
         
         // recupera o numero de contatos do tipo em questão já gravado na base de dados
         $qtde_gravada = ( get_post_meta( $post_id, '_lvm_people_'. $contato . '_n', true ) != "" ) 
-                            ? (int)( get_post_meta( $post_id, '_lvm_people_'. $contato . '_n', true )
-                            : 0;
+                            ? (int)(get_post_meta($post_id, '_lvm_people_'. $contato . '_n', true)) : 0;
 
         // marcador para o loop
         $i = 0;
@@ -19,7 +18,7 @@
             $tipo_field    = 'lvm_people_tipo_'. $contato . '_' . $i;
             $contato_field = $verificador . $i;
             $boolean_field = 'lvm_people_boolean_' . $contato . '_' . $i;
-            $bool          = (isset($_POST[$boolean_field]));
+            $bool          = (isset($_POST[$boolean_field])) ? true : false;
 
             update_post_meta( $post_id, $tipo_field, $_POST[$tipo_field] );
             update_post_meta( $post_id, $contato_field, $_POST[$contato_field] );
@@ -34,7 +33,7 @@
         // caso tenhamos menos dados do que antes,
         // ou seja, o usuário deletou algum contato previamente gravado,
         // fazemos o loop para deletar as entradas adicionais
-        for( $i; $qtde_nova < $qtde_gravada; $i++ ){
+        for( $i; $i < $qtde_gravada; $i++ ){
 
             $tipo_field    = 'lvm_people_tipo_'. $contato . '_' . $i;
             $contato_field = 'lvm_people_' . $contato . '_' . $i;

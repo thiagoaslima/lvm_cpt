@@ -84,7 +84,7 @@ LVM.helpers = (function ($) {
     // configura as funções básicas utilizadas nos métodos da interface
     LVM.people.config = {
         url: (function () {
-            var url = "/wp-content/plugins/lvm_cpt_plugin/" +
+            var url = "/wp-content/plugins/lvm_cpt/" +
                             "tmp/people.html";
             return url;
         }()),

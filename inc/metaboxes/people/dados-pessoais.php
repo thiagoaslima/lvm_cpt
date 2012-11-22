@@ -52,9 +52,9 @@
             <?php 
                 $value = get_post_meta($post_id, '_lvm_people_nasc', true);
                 $value = explode("/", $value);
-                $dia = isset ( $value[0] ) ? $value[0] : ""; 
-                $mes = isset ( $value[1] ) ? $value[1] : ""; 
-                $ano = isset ( $value[2] ) ? $value[2] : ""; 
+                $dia = isset ( $value[0] ) ? (int)$value[0] : ""; 
+                $mes = isset ( $value[1] ) ? (int)$value[1] : ""; 
+                $ano = isset ( $value[2] ) ? (int)$value[2] : ""; 
             ?>
 
             <label for="lvm_people_nasc" class="label mini">Nascimento</label>
@@ -63,7 +63,7 @@
                 $i=1; $ii=31;
                 while ( $i<=$ii ){
                     $i = str_pad( $i, 2, 0, STR_PAD_LEFT);
-                    echo "<option ". selected($dia, $i) . "value='$i'>$i</option>";
+                    echo "<option ". selected($dia, $i, false) . "value='$i'>$i</option>";
                     $i++;
                 }
             ?>
@@ -74,7 +74,10 @@
                 $meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro' ];
                 $i=0; $ii=11;
                 while( $i<=$ii ){
-                    echo "<option " . selected($mes, $i) . "value='". str_pad( $i+1, 2, 0, STR_PAD_LEFT) . "'>$meses[$i]</option>";
+                    // temos que comparar $mes-1 com pq estamos gravando a data com janeiro = 1
+                    // mas no array janeiro é posição 0
+                    // ou seja, se $mes = 1, enato temos janeiro, que está em $i=0
+                    echo "<option " . selected($mes-1, $i, false) . "value='". str_pad( $i+1, 2, 0, STR_PAD_LEFT) . "'>$meses[$i]</option>";
                     $i++;
                 }
             ?>
@@ -84,7 +87,7 @@
             <?php
                 $ii = date('Y'); $i = $ii - 100;
                 while( $i<= $ii ) {
-                    echo "<option " . selected($ano, $i) . "value='". str_pad( $i, 2, 0, STR_PAD_LEFT) . "'>$i</option>";
+                    echo "<option " . selected($ano, $i, false) . "value='". str_pad( $i, 2, 0, STR_PAD_LEFT) . "'>$i</option>";
                     $i++;
                 }
             ?>
