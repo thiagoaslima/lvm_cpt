@@ -147,7 +147,7 @@ add_action( 'admin_init', 'cpt_lvm_people_admin_interface_init' );
 // Function to register new Dados Pessoais meta box for book review post editor
 function cpt_lvm_people_admin_interface_init() {
 
-    if ( is_admin() && $_GET["post_type"] == "lvm_people" ){
+    if ( is_admin() && isset($_GET["post_type"]) && $_GET["post_type"] == "lvm_people" ){
 
         wp_enqueue_style( 'lvm_cpt', plugins_url( 'css/lvm_people_styles.css', __FILE__ ) );
         add_action('admin_footer', "add_templates" );
