@@ -4,75 +4,103 @@
 		"selected_items":
 		[
 			[
-				"con",
+				"runOb",
+				"runObjConst"
+			],
+			[
+				"cam",
+				"campos"
+			],
+			[
+				"build",
+				"buildcampos"
+			],
+			[
+				"contat",
+				"contatos"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"exte",
+				"extend"
+			],
+			[
+				"Obje",
+				"Object"
+			],
+			[
+				"cons",
 				"console"
+			],
+			[
+				"selectT",
+				"selectType"
+			],
+			[
+				"cha",
+				"changed"
+			],
+			[
+				"up",
+				"updateType"
+			],
+			[
+				"eve",
+				"event"
+			],
+			[
+				"se",
+				"select"
+			],
+			[
+				"selec",
+				"selectType"
 			],
 			[
 				"div",
 				"divContatos"
 			],
 			[
-				"p",
-				"people"
+				"si",
+				"siblings"
 			],
 			[
-				"auto",
-				"autosize"
+				"lvm_",
+				"lvm_options"
 			],
 			[
-				"get",
-				"getTemplate"
+				"bool",
+				"boolean_field"
 			],
 			[
-				"add",
-				"addToDOM"
+				"co",
+				"contato_extenso"
 			],
 			[
-				"par",
-				"parent"
+				"strt",
+				"strtolower"
 			],
 			[
-				"id",
-				"idTemplate"
-			],
-			[
-				"this",
-				"thisObj"
-			],
-			[
-				"pla",
-				"placeholder_array"
-			],
-			[
-				"qt",
-				"qtde_nova"
-			],
-			[
-				"_",
-				"_POST"
-			],
-			[
-				"tipo",
-				"tipo_field"
-			],
-			[
-				"q",
-				"qtde_nova"
-			],
-			[
-				"qtde",
-				"qtde_gravada"
-			],
-			[
-				"conta",
-				"contato"
-			],
-			[
-				"for",
-				"formas_contato"
+				"contato",
+				"contato_extenso"
 			],
 			[
 				"cont",
+				"contato"
+			],
+			[
+				"ti",
+				"tipo"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"conta",
 				"container"
 			],
 			[
@@ -92,8 +120,8 @@
 				"line_class"
 			],
 			[
-				"co",
-				"console"
+				"q",
+				"qtde_contato"
 			],
 			[
 				"te",
@@ -130,10 +158,6 @@
 			[
 				"lvm_people",
 				"lvm_people_sobrenome"
-			],
-			[
-				"fu",
-				"function"
 			],
 			[
 				"pa",
@@ -178,6 +202,10 @@
 			[
 				"lvm_peop",
 				"lvm_people"
+			],
+			[
+				"add",
+				"add_action"
 			],
 			[
 				"margin",
@@ -260,12 +288,12 @@
 				"get_meta_tags"
 			],
 			[
-				"lvm_",
-				"lvm_people"
-			],
-			[
 				"me",
 				"message"
+			],
+			[
+				"p",
+				"post	@=post"
 			],
 			[
 				"js",
@@ -300,10 +328,6 @@
 				"unique"
 			],
 			[
-				"se",
-				"send_groups"
-			],
-			[
 				"j",
 				"json_encode"
 			],
@@ -334,10 +358,6 @@
 			[
 				"metada",
 				"metadataFields"
-			],
-			[
-				"print",
-				"print_r"
 			],
 			[
 				"pri",
@@ -376,6 +396,10 @@
 				"dataName"
 			],
 			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
 				"para",
 				"param	@param"
 			],
@@ -400,20 +424,83 @@
 	"buffers":
 	[
 		{
-			"contents": "Package Control Messages\n========================\n\nSublimeLinter:\n-------------\n\n  SublimeLinter 1.6.11 changelog\n  \n  CHANGES/FIXES\n  \n  - Github (nodeload) zip url scheme changed.\n  \n",
+			"file": "js/jQuery.js",
 			"settings":
 			{
-				"buffer_size": 185,
+				"buffer_size": 331286,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/LVM.js",
+			"settings":
+			{
+				"buffer_size": 4975,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/LVM_people.js",
+			"settings":
+			{
+				"buffer_size": 2133,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "publicacoes.html",
+			"settings":
+			{
+				"buffer_size": 2762,
 				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"scratch": true
+				"name": "h2{Produção bibliográfica}"
+			}
+		},
+		{
+			"file": "tmp/people.html",
+			"settings":
+			{
+				"buffer_size": 3253,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lvm_people_admin_settings.php",
+			"settings":
+			{
+				"buffer_size": 10895,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/teste.html",
+			"settings":
+			{
+				"buffer_size": 253,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/lvm_people_form.js",
+			"settings":
+			{
+				"buffer_size": 11041,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/lvm_pub_form.js",
+			"settings":
+			{
+				"buffer_size": 1274,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 391.0,
 		"selected_items":
 		[
 			[
@@ -421,16 +508,28 @@
 				"Package Control: Install Package"
 			],
 			[
-				"pac",
+				"packa",
 				"Package Control: Remove Package"
+			],
+			[
+				"setT",
+				"Snippet: setTimeout function"
+			],
+			[
+				"jq",
+				"Snippet: jQuery.trim"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
 			],
 			[
 				"lvm",
 				"Snippet: LVM: save metadata"
-			],
-			[
-				"pa",
-				"Package Control: List Packages"
 			],
 			[
 				"pack",
@@ -445,20 +544,12 @@
 				"Set Syntax: jQuery (JavaScript)"
 			],
 			[
-				"jq",
-				"Set Syntax: jQuery (JavaScript)"
-			],
-			[
 				"disab",
 				"Package Control: Disable Package"
 			],
 			[
 				"html ",
 				"Snippet: DOCTYPE HTML"
-			],
-			[
-				"packa",
-				"Package Control: Install Package"
 			],
 			[
 				"html",
@@ -749,7 +840,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 528.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -766,30 +857,25 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt/js/lvm_people_form.js",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/js/lvm_people_form.js",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/people/contatos.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/people/contatos-save.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/css/lvm_people_styles.css",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/lvm_people_admin_settings.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/tmp/people.html",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/people/contatos-tmp.html",
-		"/C/Users/Thiago/Downloads/once.upon.a.time.the.crocodile.(2012).pob.1cd.(4695052)/Once.Upon.a.Time.S02E04.HDTV.x264-LOL.srt",
-		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e01.ssa",
-		"/C/Users/Thiago/AppData/Local/Temp/Rar$DIa0.208/Once.Upon.a.Time.S02E04.HDTV.x264-LOL.srt",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/templates/people.html",
-		"/C/Users/Thiago/Google Drive/design/Wiley.Designing.Information.Sep.2012.pdf",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/js/autosize/jquery.autosize.js",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/lvm_cpt.sublime-project",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/lvm_cpt.sublime-workspace",
-		"/c/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/.git/COMMIT_EDITMSG",
+		"/C/Users/LuP/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/js/LVM.js",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/js/libs/vanilla.js",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/js/libs/vanillajs.js",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/lvm_people_admin_settings.php",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/inc/metaboxes/people/contatos.php",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/css/lvm_people_styles.css",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/inc/metaboxes/people/dados-pessoais.php",
+		"/C/xampp/htdocs/teste.php",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/inc/metaboxes/people/contatos-save.php",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/js/lvm_people_form.js",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/lvm_cpt.sublime-workspace",
+		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/inc/metaboxes/people/contatos-tmp.html",
 		"/C/xampp/htdocs/dev/lvm_people_form.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/people/dados-pessoais.php",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Thiago/Desktop/coursera/Python/a3/a3.py",
 		"/C/Users/Thiago/Downloads/Visual Complexity - Mapping Patterns of Information PDF.pdf",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/people/contatos-tmp.html",
 		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e02.ssa",
+		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e01.ssa",
 		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/InTreat_s1e01.srt",
 		"/C/VirtualDub/demo.ssa",
 		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e03.ssa",
@@ -810,6 +896,7 @@
 		"/C/xampp/htdocs/dev/lvm.dev/wp-admin/edit-form-advanced.php",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/languages/admin-pt_BR.po",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/languages/admin-pt_BR.mo",
+		"/c/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/.git/COMMIT_EDITMSG",
 		"/C/xampp/htdocs/dev/array.php",
 		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-cpt-save-metadata.sublime-snippet",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/contatos.php",
@@ -830,7 +917,9 @@
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/.git/config",
 		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/.gitignore",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/lvm_people_admin_settings.php",
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/lvm_admin_fields.php",
+		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/lvm_cpt.sublime-project",
 		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/LiveReload.sublime-settings",
 		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e9.srt",
 		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e4.srt",
@@ -893,7 +982,9 @@
 		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/lvm_people_admin_settings.php",
 		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm-cpt-and-metabox-start.sublime-snippet",
 		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm_boolean-field.sublime-snippet",
-		"/C/xampp/htdocs/dev/trying.php"
+		"/C/xampp/htdocs/dev/trying.php",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm-cpt-AND-metabox-.sublime-snippet",
+		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm-cpt-metabox-autoSave.sublime-snippet"
 	],
 	"find":
 	{
@@ -911,19 +1002,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"tmplId",
-			"data",
-			"response",
-			"{{n}}",
-			"runTemplates",
-			"getTemplates",
-			"thisObj",
-			"$contatos",
-			"0.5",
-			"update_post_meta",
-			"tipo_field",
-			"lvm_people_lattes",
-			"email",
+			"buildcampos",
+			"tempID",
+			"tmpID",
+			"ajax",
+			"qtde_nova",
+			"_boolean_",
+			"tipo_",
+			"[\"boolean\"]",
+			"\"tipo\"",
+			"'_lvm_people_'. $contato . '_n'",
+			"tipo",
+			"tipo_",
 			"obj.hasClass",
 			"getContato(obj)",
 			"cit",
@@ -1038,7 +1128,8 @@
 			"The Borg",
 			"\\u{2,}",
 			"The Borgias",
-			"legendas"
+			"legendas",
+			"THE BORGIAS"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1065,28 +1156,251 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "js/jQuery.js",
 					"settings":
 					{
-						"buffer_size": 185,
+						"buffer_size": 331286,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								185,
-								185
+								269941,
+								269941
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 99999.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/LVM.js",
+					"settings":
+					{
+						"buffer_size": 4975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4975,
+								4975
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1630.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/LVM_people.js",
+					"settings":
+					{
+						"buffer_size": 2133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								917,
+								917
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 515.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "publicacoes.html",
+					"settings":
+					{
+						"buffer_size": 2762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2762
+							]
+						],
+						"settings":
+						{
+							"auto_name": "h2{Produção bibliográfica}",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1022.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "tmp/people.html",
+					"settings":
+					{
+						"buffer_size": 3253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "lvm_people_admin_settings.php",
+					"settings":
+					{
+						"buffer_size": 10895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5599,
+								5599
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1589.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/teste.html",
+					"settings":
+					{
+						"buffer_size": 253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								201,
+								201
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/lvm_people_form.js",
+					"settings":
+					{
+						"buffer_size": 11041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2265,
+								2265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 689.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "js/lvm_pub_form.js",
+					"settings":
+					{
+						"buffer_size": 1274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								578,
+								578
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
