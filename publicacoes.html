@@ -1,19 +1,20 @@
 <h2>Produção bibliográfica</h2>
 
-<label for="lvm_pub_tipo_pub">Tipo da publicação</label>
-<select name="lvm_pub_tipo_pub">
-	<option value="1">Artigos completos publicados em periódicos</option>
-	<option value="2">Artigos aceitos para publicação</option>
-	<option value="3">Livros e capítulos</option>
+<label for="lvm_pub_cat_pub">Tipo da publicação</label>
+<select name="lvm_pub_cat_pub">
+	<option value="1">Artigo completo publicado em periódico</option>
+	<option value="2">Artigo aceito para publicação</option>
+	<option value="3">Livro</option>
+	<option value="3b">Capítulo de Livro</option>
 	<option value="4">Texto em jornal ou revista (magazine)</option>
-	<option value="5">Trabalhos publicados em anais de eventos</option>
+	<option value="5">Trabalho publicado em anais de eventos</option>
 	<option value="6">Apresentação de trabalho e palestra</option>
 	<option value="0">Outra produção bibliográfica</option>
 </select>
 
 <!-- Artigo completo -->
 <h3>Dados Gerais</h3>
-<label for="lvm_pub_titulo">Titulo do artigo</label>
+<label for="lvm_pub_title">Titulo do artigo</label>
 <input type="text" name="lvm_pub_title">
 <br>
 
@@ -41,8 +42,8 @@
 <input type="text" name="lvm_pub_per_title">
 <br>
 
-<label for="lvm_pub_per_registro">ISSN</label>
-<input type="text" name="lvm_pub_per_registro">
+<label for="lvm_pub_per_isbn">ISSN</label>
+<input type="text" name="lvm_pub_per_isbn">
 <br>
 
 <label for="lvm_pub_per_vol">Volume</label>
@@ -64,7 +65,7 @@
 
 <!-- Artigo aceito p/ public -->
 <h3>Dados Gerais</h3>
-<label for="lvm_pub_titulo">Titulo do artigo</label>
+<label for="lvm_pub_title">Titulo do artigo</label>
 <input type="text" name="lvm_pub_title">
 <br>
 
@@ -85,9 +86,182 @@
 <input type="text" name="lvm_pub_per_registro">
 <br>
 
-<label for="lvm_pub_per_previsaoPub" data-tootltip="O sistema irá lembrá-lo a partir desta data a atualizar para artigo publicado">Previsão de publicação</label>
-<input type="text" name="lvm_pub_per_registro">
+<label for="lvm_pub_per_prevPub" data-tootltip="O sistema irá lembrá-lo a partir desta data a atualizar para artigo publicado">Previsão de publicação</label>
+<input type="text" name="lvm_pub_per_prevPub">
 <br>
 
 
-<!-- Livros e capítulos -->
+<!-- Livros -->
+<h3>Dados Gerais</h3>
+<label for="lvm_pub_title">Titulo do livro</label>
+<input type="text" name="lvm_pub_title">
+<br>
+
+<label for="lvm_pub_date">Data da publicação</label>
+<input type="date" name="lvm_pub_date">
+<br>
+
+<label for="lvm_pub_pais">País</label>
+<select name="lvm_pub_pais">
+	<option value="0">Colocar países</option>
+</select>
+
+<label for="lvm_pub_lang">Idioma</label>
+<input type="text" name="lvm_pub_lang">
+<br>
+
+<label for="lvm_pub_hosturl">Disponível em:</label>
+<input type="url" name="lvm_pub_hosturl">
+<br>
+
+<h3>Detalhamento</h3>
+<label for="lvm_pub_per_isbn">ISBN</label>
+<input type="text" name="lvm_pub_isbn">
+<br>
+
+<label for="lvm_pub_vei_volQtde">Número de volumes</label>
+<input type="text" name="lvm_pub_vei_volQtde">Número de páginas
+<br>
+
+<label for="lvm_pub_per_vol">Número da edição/revisão</label>
+<input type="text" name="lvm_pub_per_vol">
+<br>
+
+<label for="lvm_pub_per_serie">Série</label>
+<input type="text" name="lvm_pub_per_serie">
+<br>
+
+<label for="lvm_pub_per_editora">Editora</label>
+<input type="text" name="lvm_pub_per_editora">
+<br>
+
+<label for="lvm_pub_per_cidade">Cidade da editora</label>
+<input type="text" name="lvm_pub_per_cidade">
+<br>
+
+<!-- Capítulo de livro -->
+<h3>Dados Gerais</h3>
+<label for="lvm_pub_title">Título</label>
+<input type="text" name="lvm_pub_title">
+<br>
+
+<label for="lvm_pub_pais">País</label>
+<select name="lvm_pub_pais">
+	<option value="0">Colocar países</option>
+</select>
+<br>
+
+<label for="lvm_pub_idioma">Idioma</label>
+<select name="lvm_pub_pais">
+	<option value="0">Colocar idiomas</option>
+</select>
+
+<label for="lvm_pub_midia">Meio</label>
+<input type="text" name="lvm_pub_midia">
+<br>
+
+<label for="lvm_pub_hosturl">Disponível em:</label>
+<input type="url" name="lvm_pub_hosturl">
+<br>
+
+<h3>Detalhamento</h3>
+<label for="lvm_pub_vei_title">Título da obra</label>
+<input type="text" name="lvm_pub_vei_title">
+<br>
+
+<label for="lvm_pub_vei_org">Organizadores</label>
+<input type="text" name="lvm_pub_vei_org">
+<a href="#" class="add">+Adicionar organizador</a>
+<br>
+
+<label for="lvm_pub_vei_vol">Volume</label>
+<input type="number" name="lvm_pub_vei_vol">
+<br>
+
+Pag Inicial
+
+Pag Final
+
+Numero edicao
+
+Serie
+
+ISBN
+
+Cidade da editora
+
+Editora
+
+<!-- Texto em jornal -->
+
+Jornal ou revista
+
+Titulo
+
+Ano
+
+Pais
+
+Idioma
+
+Meio
+
+Url
+
+titulo veículo
+
+issn
+
+data de publicacao
+
+volume
+
+pagina inicial
+
+pagina final
+
+local de publicação
+
+
+<!-- Trabalhos em anais -->
+
+Completo, resumo ou resumo expandido
+
+título
+
+ano
+
+país
+
+idioma
+
+meio
+
+url
+
+classificação do evento 
+(Internacional   Nacional   Regional   Local )
+
+titulo do evento
+
+cidade do evento
+
+ano do evento
+
+titulo dos anais do evento (vei_title)
+
+volume
+
+fascículo (vei_edicao)
+
+série
+
+pag inicial
+
+pag final
+
+ISBN
+
+Editora
+
+Cidade da editora

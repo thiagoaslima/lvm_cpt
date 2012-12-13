@@ -4,6 +4,198 @@
 		"selected_items":
 		[
 			[
+				"pg",
+				"pgFinal"
+			],
+			[
+				"selected",
+				"__checked_selected_helper"
+			],
+			[
+				"metada",
+				"metadatas"
+			],
+			[
+				"mon",
+				"montagemCampo"
+			],
+			[
+				"php",
+				"phpinfo"
+			],
+			[
+				"requ",
+				"require_once"
+			],
+			[
+				"html",
+				"html	html"
+			],
+			[
+				"categ",
+				"categorias"
+			],
+			[
+				"met",
+				"metadataFields"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"lvm_pub_vol",
+				"lvm_pub_volQty"
+			],
+			[
+				"lvm_pub",
+				"lvm_pub_volume"
+			],
+			[
+				"date",
+				"date_parts"
+			],
+			[
+				"post",
+				"post_id"
+			],
+			[
+				"pos",
+				"post_title"
+			],
+			[
+				"tit",
+				"title"
+			],
+			[
+				"type",
+				"type=\"text"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"floa",
+				"float"
+			],
+			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"display",
+				"display:inline"
+			],
+			[
+				"menu",
+				"menuNav"
+			],
+			[
+				"displa",
+				"display"
+			],
+			[
+				"sele",
+				"select"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"b",
+				"bg	background"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"an",
+				"androidModule"
+			],
+			[
+				"body",
+				"bodyFontSize"
+			],
+			[
+				"verti",
+				"vertical-align"
+			],
+			[
+				"v",
+				"visuallyhidden"
+			],
+			[
+				"f",
+				"fw	font-weight"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"pub_vei_edi",
+				"pub_vei_editora"
+			],
+			[
+				"edit",
+				"editora"
+			],
+			[
+				"pub_vei_vol",
+				"pub_vei_volQty"
+			],
+			[
+				"div",
+				"divulgação"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"pub_v",
+				"pub_vei_iniPg"
+			],
+			[
+				"pub_ve",
+				"pub_vei_serie"
+			],
+			[
+				"pub_vei_",
+				"pub_vei_volume"
+			],
+			[
+				"fA",
+				"false"
+			],
+			[
+				"ti",
+				"titles"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
 				"runOb",
 				"runObjConst"
 			],
@@ -60,10 +252,6 @@
 				"selectType"
 			],
 			[
-				"div",
-				"divContatos"
-			],
-			[
 				"si",
 				"siblings"
 			],
@@ -90,10 +278,6 @@
 			[
 				"cont",
 				"contato"
-			],
-			[
-				"ti",
-				"tipo"
 			],
 			[
 				"print",
@@ -160,20 +344,12 @@
 				"lvm_people_sobrenome"
 			],
 			[
-				"pa",
-				"padding-left"
-			],
-			[
 				"padd",
 				"padding"
 			],
 			[
 				"paddin",
 				"padding-right"
-			],
-			[
-				"f",
-				":focus"
 			],
 			[
 				"re",
@@ -236,20 +412,12 @@
 				"font-size"
 			],
 			[
-				"sele",
-				"selected"
-			],
-			[
 				"ex",
 				"explode"
 			],
 			[
 				"is_a",
 				"is_admin"
-			],
-			[
-				"post",
-				"post_type"
 			],
 			[
 				"cu",
@@ -346,121 +514,48 @@
 			[
 				"meta",
 				"metadataUniqueFields"
-			],
-			[
-				"ret",
-				"retData"
-			],
-			[
-				"chec",
-				"checked"
-			],
-			[
-				"metada",
-				"metadataFields"
-			],
-			[
-				"pri",
-				"print_r"
-			],
-			[
-				"array_p",
-				"array_push"
-			],
-			[
-				"fields",
-				"fields_url"
-			],
-			[
-				"file_",
-				"file_get_contents"
-			],
-			[
-				"fiel",
-				"fields_url"
-			],
-			[
-				"va",
-				"value"
-			],
-			[
-				"str_",
-				"str_replace"
-			],
-			[
-				"field",
-				"fieldLabel"
-			],
-			[
-				"data",
-				"dataName"
-			],
-			[
-				"for",
-				"foreach	foreach …"
-			],
-			[
-				"para",
-				"param	@param"
-			],
-			[
-				"in",
-				"input	input - text"
-			],
-			[
-				"inp",
-				"input	input - text"
-			],
-			[
-				"fo",
-				"form	Tag"
-			],
-			[
-				"metabox",
-				"_metabox_title"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "js/jQuery.js",
+			"file": "inc/metaboxes/publicacoes/dadosPub.php",
 			"settings":
 			{
-				"buffer_size": 331286,
-				"line_ending": "Unix"
+				"buffer_size": 1420,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/LVM.js",
+			"file": "inc/metaboxes/publicacoes/pubFields.php",
 			"settings":
 			{
-				"buffer_size": 4975,
-				"line_ending": "Unix"
+				"buffer_size": 26623,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/LVM_people.js",
+			"file": "inc/metaboxes/publicacoes/artigos.php",
 			"settings":
 			{
-				"buffer_size": 2133,
-				"line_ending": "Unix"
+				"buffer_size": 450,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "publicacoes.html",
+			"file": "inc/metaboxes/publicacoes/dadosPub2.php",
 			"settings":
 			{
-				"buffer_size": 2762,
-				"line_ending": "Windows",
-				"name": "h2{Produção bibliográfica}"
+				"buffer_size": 5596,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "tmp/people.html",
+			"file": "lvm_publicacoes_admin_settings.php",
 			"settings":
 			{
-				"buffer_size": 3253,
+				"buffer_size": 9441,
 				"line_ending": "Unix"
 			}
 		},
@@ -473,43 +568,104 @@
 			}
 		},
 		{
-			"file": "js/teste.html",
+			"file": "inc/metaboxes/publicacoes/campos.php",
 			"settings":
 			{
-				"buffer_size": 253,
-				"line_ending": "Unix"
+				"buffer_size": 7830,
+				"line_ending": "Windows",
+				"name": "<?php"
 			}
 		},
 		{
-			"file": "js/lvm_people_form.js",
+			"file": "js/lvm_pub_ajax.js",
 			"settings":
 			{
-				"buffer_size": 11041,
-				"line_ending": "Unix"
+				"buffer_size": 203,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/lvm_pub_form.js",
+			"file": "/C/Users/LuP/AppData/Roaming/Sublime Text 2/Packages/LVM/lvm_pub_fields.sublime-snippet",
 			"settings":
 			{
-				"buffer_size": 1274,
-				"line_ending": "Unix"
+				"buffer_size": 681,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "arquivosOrientacao/lista de categorias.txt",
+			"settings":
+			{
+				"buffer_size": 4128,
+				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/Java/Ant.sublime-build",
 	"command_palette":
 	{
-		"height": 391.0,
+		"height": 81.0,
 		"selected_items":
 		[
 			[
-				"in",
-				"Package Control: Install Package"
+				"lvm",
+				"Snippet: lvm_pub_fields"
+			],
+			[
+				"lv",
+				"Snippet: lvm_pub_fields"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
 			],
 			[
 				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
 				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
 			],
 			[
 				"setT",
@@ -518,18 +674,6 @@
 			[
 				"jq",
 				"Snippet: jQuery.trim"
-			],
-			[
-				"pac",
-				"Package Control: Install Package"
-			],
-			[
-				"pa",
-				"Package Control: Install Package"
-			],
-			[
-				"lvm",
-				"Snippet: LVM: save metadata"
 			],
 			[
 				"pack",
@@ -566,10 +710,6 @@
 			[
 				"cs",
 				"Sort via CSScomb"
-			],
-			[
-				"re",
-				"Package Control: Remove Package"
 			],
 			[
 				"syn",
@@ -668,10 +808,6 @@
 				"Set Syntax: PHP"
 			],
 			[
-				"lv",
-				"Snippet: LVM: Text field (unique)"
-			],
-			[
 				"open",
 				"View: Toggle Open Files in Side Bar"
 			],
@@ -718,14 +854,6 @@
 			[
 				"SNI WOR",
 				"Snippet: Register CPT + MetaBox Wordpress"
-			],
-			[
-				"list",
-				"Package Control: List Packages"
-			],
-			[
-				"Snippet: ",
-				"Snippet: Start Docblock"
 			],
 			[
 				"Snippet: w",
@@ -824,10 +952,6 @@
 				"Fetch: Package"
 			],
 			[
-				"p",
-				"Preferences: Settings - User"
-			],
-			[
 				"prefe",
 				"Preferences: Settings - User"
 			],
@@ -840,7 +964,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 401.0
 	},
 	"console":
 	{
@@ -858,133 +982,7 @@
 	"file_history":
 	[
 		"/C/Users/LuP/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/js/LVM.js",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/js/libs/vanilla.js",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/js/libs/vanillajs.js",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/lvm_people_admin_settings.php",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/inc/metaboxes/people/contatos.php",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/css/lvm_people_styles.css",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/inc/metaboxes/people/dados-pessoais.php",
-		"/C/xampp/htdocs/teste.php",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/inc/metaboxes/people/contatos-save.php",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/js/lvm_people_form.js",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/lvm_cpt.sublime-workspace",
-		"/C/xampp/htdocs/lvm.dev/wp-content/plugins/lvm_cpt/inc/metaboxes/people/contatos-tmp.html",
-		"/C/xampp/htdocs/dev/lvm_people_form.php",
-		"/C/Users/Thiago/Desktop/coursera/Python/a3/a3.py",
-		"/C/Users/Thiago/Downloads/Visual Complexity - Mapping Patterns of Information PDF.pdf",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/people/contatos-tmp.html",
-		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e02.ssa",
-		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e01.ssa",
-		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/InTreat_s1e01.srt",
-		"/C/VirtualDub/demo.ssa",
-		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e03.ssa",
-		"/C/Users/Thiago/Downloads/InTreatment/In_Treatment___Season_1__complete/ssa/InTreat_s1e04.ssa",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/periodicos/linha de frente/46_out-30/pagina/index.html",
-		"/C/Users/Thiago/Desktop/Borgias S2/leg/e09.srt",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/08_agosto/clima/pecas/emkt/index.html",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/periodicos/linha de frente/46_out-30/mail mkt/index.html",
-		"/C/Users/Thiago/Desktop/smail.php",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/2a turma/names.xml",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-config.php",
-		"/C/xampp/htdocs/dev/lvm.dev/php-errors.log",
-		"/C/Users/Thiago/Desktop/sendemail.php",
-		"/C/Users/Thiago/Downloads/curriculo.xml",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/people/contatos_templates.html",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/09_setembro/certificados curso Lideranca/3a turma/names.xml",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-admin/admin.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-admin/edit-form-advanced.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/languages/admin-pt_BR.po",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/languages/admin-pt_BR.mo",
-		"/c/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/.git/COMMIT_EDITMSG",
-		"/C/xampp/htdocs/dev/array.php",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-cpt-save-metadata.sublime-snippet",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/contatos.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/metaboxes/dados-pessoais.php",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/CSScomb/Default (Windows).sublime-keymap",
-		"/C/Users/Thiago/Downloads/bootstrap/css/bootstrap.css",
-		"/C/Users/Thiago/.bashrc",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-cpt-and-metabox-start.sublime-snippet",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-cpt-admin-add-metabox.sublime-snippet",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/fields/lvm_text_field.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/fields/lvm_boolean_field.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/fields/lvm_url_field.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/_lvm_cpt_plugin/lvm_people_admin_settings.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/.git/COMMIT_EDITMSG",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/dados gerais/plantas.txt",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/.git/HEAD",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/.git/config",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/.gitignore",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/lvm_people_admin_settings.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/inc/lvm_admin_fields.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_cpt_plugin/lvm_cpt.sublime-project",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/LiveReload.sublime-settings",
-		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e9.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e4.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e8.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e3.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e6.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e7.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e1.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/leg_en/e5.srt",
-		"/C/Users/Thiago/Desktop/Borgias S2/leg/e04.srt",
-		"/C/Users/Thiago/Desktop/Borgias S2/leg/e06.srt",
-		"/C/Users/Thiago/Desktop/Borgias S2/leg/e08.srt",
-		"/C/Users/Thiago/Desktop/Borgias S2/leg/e05.srt",
-		"/C/Users/Thiago/Desktop/Borgias S2/leg/e07.srt",
-		"/C/Users/Thiago/Desktop/Borgias S2/leg/e10.srt",
-		"/C/Users/Thiago/Desktop/Borgias S2/leg/e02.srt",
-		"/C/Users/Thiago/Desktop/Borgias S2/leg/e03.srt",
-		"/C/Users/Thiago/Desktop/Borgias S2/leg/e01.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/e8.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/e9.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/e4.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/e7.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/e6.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/e1.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/e5.srt",
-		"/C/Users/Thiago/Desktop/Borgias S1/e3.srt",
-		"/C/Users/Thiago/Desktop/e6.srt",
-		"/C/Users/Thiago/Downloads/thbgistemp (3)/The Borgias  2ª Temporada720p [www.baixartorrent.net]/The.Borgias.S02E04.720p.HDTV.x264-IMMERSE.srt",
-		"/C/Users/Thiago/Downloads/The Borgias Season 1 Complete 720p/The.Borgias.S01E01.720p.HDTV.x264.srt",
-		"/C/Users/Thiago/Downloads/The.Borgias.S02E06.REPACK.720p.HDTV.x264-IMMERSE [PublicHD]/the.borgias.s02e06.repack.720p.hdtv.x264-immerse.nfo",
-		"/C/Users/Thiago/Downloads/[ www.Speed.Cd ] - The.Borgias.S02E05.720p.HDTV.x264-IMMERSE/the.borgias.s02e05.720p.hdtv.x264-immerse.sfv",
-		"/C/Users/Thiago/Desktop/coursera/PythonInteractive/ass1/begin.py",
-		"/C/xampp/htdocs/dev/people.js",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/08_agosto/papelaria/cartoes1/gerentes.txt",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/endereçoPlantas.xml",
-		"/C/Users/Thiago/Downloads/Houaiss eletrônico [3.0] (2009)/FHS-21570589",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/plantas.txt",
-		"/C/Users/Thiago/Downloads/master.atom.webintents",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/plantas.csv",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/developing.TODO",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/PlainTasks/messages/Tutorial.todo",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Todo Manager/README.md",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/TodoManager.sublime-settings",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/TodoManager/TodoManager.sublime-settings",
-		"/C/Users/Thiago/Google Drive/programming/javascript/backbone-fundamentals.epub",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/periodicos/linha de frente/45_out-15/mail mkt/index.html",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/periodicos/linha de frente/45_out-15/pagina/index.html",
-		"/C/Users/Thiago/Documents/trabalhos/Aperas/Tecsis/2012/periodicos/linha de frente/sendemail.php",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-text-field-unique.sublime-snippet",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-cpt-metabox-autoSave.sublime-snippet",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/User/Gist.sublime-settings",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/lvm_people_admin_settings.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/inc/fields/lvm_boolean_field.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/inc/lvm_admin_fields.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/inc/fields/lvm_url_field.php",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-add-metabox.sublime-snippet",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/inc/fields/lvm_text_field.php",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM_Snippets/lvm-boolean-field-unique.sublime-snippet",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_custom_post_types/lvm_publications_admin_settings.php",
-		"/C/xampp/htdocs/dev/lvm.dev/wp-content/plugins/lvm_people_cpt/lvm_people_admin_settings.php",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm-cpt-and-metabox-start.sublime-snippet",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm_boolean-field.sublime-snippet",
-		"/C/xampp/htdocs/dev/trying.php",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm-cpt-AND-metabox-.sublime-snippet",
-		"/C/Users/Thiago/AppData/Roaming/Sublime Text 2/Packages/Wordpress/LVM/lvm-cpt-metabox-autoSave.sublime-snippet"
+		"/C/Users/LuP/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
 	],
 	"find":
 	{
@@ -1002,6 +1000,41 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"isset($cl)",
+			"$",
+			"indent",
+			"url",
+			"idioma",
+			"post_title",
+			"publicacoes",
+			"cpt_publicacoes",
+			"publicacoes",
+			"lvm_people",
+			"publicacoes",
+			".length",
+			"datePrev",
+			"ResetRegisters",
+			"grid",
+			"#b3d4fc",
+			"()",
+			"Autores",
+			"autores",
+			"Autores",
+			"$argument",
+			"titles",
+			"$cat",
+			"vei_iniPg",
+			"vei_title",
+			"lvm_pub_evt_cidade",
+			"evt_class",
+			"class",
+			"evt_class",
+			"class",
+			"url",
+			"titulo",
+			"lavel",
+			"\n",
+			"lvm_pub_titulo",
 			"buildcampos",
 			"tempID",
 			"tmpID",
@@ -1094,42 +1127,7 @@
 			"small",
 			"input",
 			"email",
-			"if",
-			"0",
-			"value=\"$value\"",
-			"$_POST['lvm_people_nasc']",
-			"$",
-			"'lvm_people_nasc'",
-			"nome da metadata",
-			"lvm_people_lattes",
-			"masculino",
-			"João Carlos",
-			"João Carlos da Silva Souza",
-			"\\",
-			"syn",
-			"syn\nsyn",
-			"syn\n",
-			".\n",
-			"sy",
-			"The Borg",
-			"sync",
-			"elderman",
-			"honeybunny",
-			"The Borgias",
-			"\\u{2,}",
-			"\\U{2,}",
-			"The Borgias",
-			"\\u{2,}",
-			"\\u{2.}",
-			"The Borgias",
-			"\\u{2,}",
-			"Borgias",
-			"\\u{2,}",
-			"The Borg",
-			"\\u{2,}",
-			"The Borgias",
-			"legendas",
-			"THE BORGIAS"
+			"if"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1156,144 +1154,143 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "js/jQuery.js",
+					"file": "inc/metaboxes/publicacoes/dadosPub.php",
 					"settings":
 					{
-						"buffer_size": 331286,
+						"buffer_size": 1420,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								269941,
-								269941
+								1413,
+								1413
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 99999.0,
+						"translation.y": 504.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "js/LVM.js",
+					"file": "inc/metaboxes/publicacoes/pubFields.php",
 					"settings":
 					{
-						"buffer_size": 4975,
+						"buffer_size": 26623,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4975,
-								4975
+								19553,
+								20010
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1630.0,
+						"translation.y": 6961.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "js/LVM_people.js",
+					"file": "inc/metaboxes/publicacoes/artigos.php",
 					"settings":
 					{
-						"buffer_size": 2133,
+						"buffer_size": 450,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								917,
-								917
+								109,
+								109
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 515.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "publicacoes.html",
+					"file": "inc/metaboxes/publicacoes/dadosPub2.php",
 					"settings":
 					{
-						"buffer_size": 2762,
+						"buffer_size": 5596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								2762
+								799,
+								799
 							]
 						],
 						"settings":
 						{
-							"auto_name": "h2{Produção bibliográfica}",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1022.0,
+						"translation.y": 717.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "tmp/people.html",
+					"file": "lvm_publicacoes_admin_settings.php",
 					"settings":
 					{
-						"buffer_size": 3253,
+						"buffer_size": 9441,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1836,
+								1836
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 90.0,
+						"translation.y": 487.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1310,8 +1307,8 @@
 						"selection":
 						[
 							[
-								5599,
-								5599
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1321,89 +1318,166 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1589.0,
+						"translation.y": 493.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
 					"buffer": 6,
-					"file": "js/teste.html",
+					"file": "inc/metaboxes/publicacoes/campos.php",
 					"settings":
 					{
-						"buffer_size": 253,
+						"buffer_size": 7830,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								201,
-								201
+								1294,
+								1297
+							],
+							[
+								1640,
+								1643
+							],
+							[
+								3141,
+								3144
+							],
+							[
+								3553,
+								3556
+							],
+							[
+								4449,
+								4452
+							],
+							[
+								5547,
+								5550
+							],
+							[
+								5940,
+								5943
+							],
+							[
+								6263,
+								6266
+							],
+							[
+								6605,
+								6608
+							],
+							[
+								6946,
+								6949
+							],
+							[
+								7317,
+								7320
+							],
+							[
+								7672,
+								7675
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"auto_name": "<?php",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 18.0,
+						"translation.y": 2983.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "js/lvm_people_form.js",
+					"file": "js/lvm_pub_ajax.js",
 					"settings":
 					{
-						"buffer_size": 11041,
+						"buffer_size": 203,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2265,
-								2265
+								199,
+								199
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 689.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 8,
-					"file": "js/lvm_pub_form.js",
+					"file": "/C/Users/LuP/AppData/Roaming/Sublime Text 2/Packages/LVM/lvm_pub_fields.sublime-snippet",
 					"settings":
 					{
-						"buffer_size": 1274,
+						"buffer_size": 681,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								578,
-								578
+								217,
+								224
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"default_extension": "sublime-snippet",
+							"syntax": "Packages/XML/XML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "arquivosOrientacao/lista de categorias.txt",
+					"settings":
+					{
+						"buffer_size": 4128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2073,
+								2112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 671.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1428,11 +1502,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1483,6 +1564,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": false,
-	"side_bar_width": 211.0,
+	"side_bar_width": 101.0,
 	"status_bar_visible": true
 }

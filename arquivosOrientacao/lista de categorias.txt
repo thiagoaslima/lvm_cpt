@@ -1,0 +1,138 @@
+CAMPOS DO FORMULÁRIO
+
+'categoria'	=>	'lvm_pub_category'		filter
+
+'titulo'    =>  'post_title',
+'data'      =>  'lvm_pub_date',
+'ano'		=>	'lvm_pub_year',			filter
+'mes'		=>	'lvm_pub_month',
+'dia'		=>	'lvm_pub_day',
+'previsao'  =>  'lvm_pub_isprev',
+'idioma'    =>  'lvm_pub_lang',
+'meio'      =>  'lvm_pub_media',
+'host'       =>  'lvm_pub_host',
+
+'tituloPer' =>  'lvm_pub_per_title',	filter
+'codigo'    =>  'lvm_pub_per_code',
+'volume'    =>  'lvm_pub_per_volume',
+'serie'     =>  'lvm_pub_per_serie',
+'pgInicial' =>  'lvm_pub_per_pgini',
+'pgFinal'   =>  'lvm_pub_per_pgend'
+
+
+1.	Categorias 			lvm_pub_category
+2. 	Título 				post_title
+3.	Data publicação		lvm_pub_date	
+    a Dia publicação	lvm_pub_date_day
+	b Mês publicação	lvm_pub_date_month
+	c Ano publicação	lvm_pub_date_year
+4.  Data de previsão?	lvm_pub_date_isPrev
+5.  Idioma				lvm_pub_lang
+6.  Mídia				lvm_pub_media
+
+7.  TituloSuporte		lvm_pub_sup_title
+8.  Organizadores
+9.  Código				lvm_pub_sup_code
+10. Volume 				lvm_pub_volume
+11.	Total de volumes 	lvm_pub_volQty
+12.	Série 				lvm_pub_serie
+13.	Edição 				lvm_pub_edition
+14. Total de páginas 	lvm_pub_pgQty
+15. Página inicial 		lvm_pub_pgIn
+16. Página final 		lvm_pub_pgEnd
+17. Editora 			lvm_pub_editora
+18.	Cidade da Editora 	lvm_pub_city
+
+************************************************
+CATEGORIAS
+
+1 -> Artigo completo para publicação em periódico
+2 -> Livro
+3 -> Capítulo de Livro
+4 -> Texto em jornal ou revista (magazine)
+5 -> Trabalho publicado em anais de eventos
+6 -> Apresentação de trabalho e palestra
+
+
+************************************************
+CATEGORIA 1 -> Artigo
+
+Dados pessoais
+	Título	pub_title 		Título do artigo
+	Ano 	pub_date 		Data da publicação
+	Previs 	pub_date_isPrev ...
+	Idioma 	pub_lang 		Idioma da publicação
+	Mídia 	pub_media 		Meio de divulgação
+	URL     pub_host 		Home page do trabalho(url)
+
+Detalhamento
+	veiculoTítulo 	pub_vei_title 	Título do periódico/revista em que o artigo foi publicado
+	ISSN 			pub_vei_isbn	ISSN
+	Volume			pub_vei_volume	Volume
+	Série			pub_vei_serie	Série
+	Pg inicial 		pub_vei_iniPg 	Página inicial/Número artigo eletrônico
+	Pg final		pub_vei_endPg	Página final
+
+
+************************************************
+CATEGORIA 2 -> Livro
+
+Dados pessoais
+	Título 	pub_title 		Título do livro
+	Opções	pub_options_1	Tipo do trabalho
+			pub_options_2	Natureza
+	Ano 	pub_date 		Data da publicação
+	Idioma	pub_lang		Idioma
+	Mídia 	pub_media 		Meio de divulgação
+	URL 	pub_host 		Home page do trabalho (url)
+
+Detalhamento
+	QtdeVol	pub_vei_volQty		Número de volumes
+	páginas	pub_vei_iniPg		Número de páginas
+	ISBN 	pub_vei_isbn		ISBN
+	Edição	pub_vei_edition		Número da edição
+	Série	pub_vei_serie		Série
+	Cidade da Editora	pub_vei_edCity 	Cidade da Editora
+	Editora	pub_vei_editora		Nome da Editora
+
+************************************************
+CATEGORIA 3 -> Capítulo de Livro
+
+Dados pessoais
+	Título 	pub_title 		Título do livro
+	Ano 	pub_date 		Data da publicação
+	Idioma	pub_lang		Idioma
+	Mídia 	pub_media 		Meio de divulgação
+	URL 	pub_host 		Home page do trabalho (url)
+
+Detalhamento
+	veiculoTítulo 	pub_vei_title 	Título do livro
+	Organizadores	pub_vei_org		Organizadores do livro
+	Volume			pub_vei_volume		Volume
+	Pg inicial 		pub_vei_iniPg 		Página inicial
+	Pg final		pub_vei_endPg		Página final
+	Edição			pub_vei_edition		Número da edição
+	Série			pub_vei_serie		Série
+	ISBN 			pub_vei_isbn		ISSN
+	Cidade da Editora	pub_vei_edCity 	Cidade da Editora
+	Editora			pub_vei_editora		Nome da Editora
+
+************************************************
+CATEGORIA 4 -> Texto em jornal ou revista (magazine)
+
+Dados pessoais
+	Opções	pub_options 	Natureza
+	Título 	pub_title 		Título
+	Ano 	pub_date 		Data da publicação
+	Idioma	pub_lang		Idioma
+	Mídia 	pub_media 		Meio de divulgação
+	URL 	pub_host 		Home page do trabalho (url)
+
+Detalhamento
+	veiculoTítulo 	pub_vei_title 	Título do jornal/revista em que o texto foi publicado
+	ISBN 			pub_vei_isbn		ISSN
+	Volume			pub_vei_volume		Volume
+	Pg inicial 		pub_vei_iniPg 		Página inicial
+	Pg final		pub_vei_endPg		Página final
+	Cidade da Editora	pub_vei_edCity 	Local de publicação
+IMPLEMENT CAT 4 ON PHP
